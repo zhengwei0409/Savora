@@ -30,7 +30,7 @@ A web-based platform designed to help users manage and achieve their financial g
 
 ## 📁 Folder Structure
 
-Refer to the repository layout in the folder for clear modular structure of frontend, backend, and chatbot components.
+Refer to the [repository layout](Repository Layout) in the folder for clear modular structure of frontend, backend, and chatbot components.
 
 ## 🚀 Getting Started
 
