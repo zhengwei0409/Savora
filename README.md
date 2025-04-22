@@ -1,4 +1,4 @@
-Web Programming Project - Financial Goal Planning System
+Team 04, Semester 2 2024/2025, Web Programming Project - Financial Goal Planning System
 # Savora
 A web-based platform designed to help users manage and achieve their financial goals through strategic planning, market insights, and educational tools.
 
