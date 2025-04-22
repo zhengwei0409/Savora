@@ -1,0 +1,58 @@
+financial-goal-planning-system/
+│
+├── index.html                   # Main landing page
+├── about.html                  # About or info page
+├── contact.html                # Optional: Contact/support page
+│
+├── assets/                     # Static assets like images, fonts, etc.
+│   ├── images/
+│   └── fonts/
+│
+├── css/                        # Custom stylesheets
+│   └── styles.css
+│
+├── js/                         # Frontend JavaScript files
+│   ├── main.js                 # Main JS logic
+│   └── chatbot.js              # AI Assistant logic (frontend)
+│
+├── components/                 # Reusable HTML components
+│   ├── navbar.html
+│   └── footer.html
+│
+├── pages/                      # Additional feature pages
+│   ├── goals.html              # Goal setting & tracking
+│   ├── strategy.html           # Personalized recommendations
+│   ├── insights.html           # Market news & events
+│   ├── tools.html              # Investment calculators
+│   ├── education.html          # Books, videos, articles
+│   └── assistant.html          # AI Chatbot interface
+│
+├── server/                     # Backend (Node.js + MongoDB logic)
+│   ├── app.js                  # Main server file
+│   ├── routes/                 # Route handlers
+│   │   ├── goals.js
+│   │   ├── strategy.js
+│   │   ├── insights.js
+│   │   ├── tools.js
+│   │   ├── education.js
+│   │   └── assistant.js
+│   ├── models/                 # MongoDB models
+│   │   ├── User.js
+│   │   ├── Goal.js
+│   │   └── Strategy.js
+│   └── controllers/            # Business logic
+│       ├── goalsController.js
+│       ├── strategyController.js
+│       ├── insightsController.js
+│       ├── toolsController.js
+│       ├── educationController.js
+│       └── assistantController.js
+│
+├── config/                     # Configuration files
+│   └── db.js                   # MongoDB connection
+│
+├── chatbot/                    # AI chatbot logic (can integrate external service or use Python backend)
+│   └── assistant_logic.js      # Placeholder for AI assistant logic
+│
+├── README.md                   # Project overview & documentation
+└── package.json                # Node dependencies and scripts
