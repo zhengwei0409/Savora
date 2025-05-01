@@ -1,0 +1,51 @@
+/* Header navigation bar style sheet */
+.header {
+    background-color: #2D336B;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 100px;
+    padding: 10px 10px 20px 10px;
+}
+
+.nav-bar {
+    display: inline-block;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.active {
+    font-weight: 700;
+}
+
+.sbtn-outline {
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    margin-right: 30px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+.sbtn-outline:hover {
+    transition: 1s;
+    background-color: white;
+    color: #2D336B;
+
+}
