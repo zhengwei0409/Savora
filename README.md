@@ -37,11 +37,12 @@ Refer to the [Repository Layout](https://github.com/DYing04/Savora/blob/main/Rep
 ### 1. Clone the repo
 ```bash
 git clone https://github.com/DYing04/Savora.git
+```
 
 ### 2. Install dependencies
 ```bash
 npm install
-
+```
 This will install all dependencies listed in package.json, including Bootstrap, Express, MongoDB driver, and others.
 
 💡 Make sure you have Node.js installed before running this command.
