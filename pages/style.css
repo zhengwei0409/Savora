@@ -1,0 +1,43 @@
+html, body{
+    margin: 0;                /* ← removes the outer white strip */
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    background-color: #2D336B;
+    color: white;
+    padding: 20px;
+
+}
+
+header div a img{
+    width: 70%;      
+    height: auto;
+}
+
+header #header{
+    display: flex;
+    padding-left: 15px;
+}
+
+header div h1{
+    color: #E2E7FA;
+    font-size: 20px;
+}
+
+header div h1 a{
+    color: #E2E7FA;
+    font-size: 20px;
+}
+
+.small-font{
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-menu{
+    display: flex;
+    padding-top: 10px;
+    gap: 50px; 
+}
