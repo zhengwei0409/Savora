@@ -1,27 +1,4 @@
 {
-<<<<<<< HEAD
-    "name": "savora",
-    "version": "1.0.0",
-    "description": "Team 04, Semester 2 2024/2025, Web Programming Project - Financial Goal Planning System\r # Savora\r A web-based platform designed to help users manage and achieve their financial goals through strategic planning, market insights, and educational tools.",
-    "main": "index.js",
-    "scripts": {
-        "start": "node index.js"
-    },
-    "author": "",
-    "license": "ISC",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/DYing04/Savora.git"
-    },
-    "keywords": [],
-    "bugs": {
-        "url": "https://github.com/DYing04/Savora/issues"
-    },
-    "homepage": "https://github.com/DYing04/Savora#readme",
-    "dependencies": {
-        "bootstrap": "^5.3.5"
-    }
-=======
   "name": "savora",
   "version": "1.0.0",
   "description": "Team 04, Semester 2 2024/2025, Web Programming Project - Financial Goal Planning System # Savora A web-based platform designed to help users manage and achieve their financial goals through strategic planning, market insights, and educational tools.",
@@ -35,5 +12,4 @@
     "bootstrap": "^5.3.5",
     "bootstrap-icons": "^1.11.3"
   }
->>>>>>> 26b733051376f724b3341d666b5d4c7b18045be7
 }
