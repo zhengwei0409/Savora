@@ -1,7 +1,12 @@
+/* Optional if your page dont set the font */
+* {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
 /* Header navigation bar style sheet */
 .header {
     background-color: #2D336B;
-    height: 100px;
+    height: 85px;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -14,7 +19,7 @@
 }
 
 .logo {
-    height: 100px;
+    height: 90px;
     padding: 10px 10px 20px 10px;
 }
 
@@ -48,4 +53,8 @@
     background-color: white;
     color: #2D336B;
 
+}
+
+.sbtn-outline .bi {
+    margin-right: 10px;
 }

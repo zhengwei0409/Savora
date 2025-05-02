@@ -34,8 +34,7 @@ main .logo {
   }
   
   .title-section {
-    font-size: 3rem;
-    font-weight: bold;
+    font-weight: 900;
     background: linear-gradient(45deg, #4facfe, #00f2fe, #a18cd1, #fbc2eb);
     background-size: 300% 300%;
     -webkit-background-clip: text;
@@ -53,11 +52,25 @@ main .logo {
 
 .sbtn-primary {
     border: none;
-    background-color: white;
-    color: black ;
-    padding: 10px 30px 10px 30px;
+    background-color: #A9B5DF;
+    color: white;
+    padding: 10px 30px;
     border-radius: 30px;
     font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sbtn-primary:hover {
+    background-color: #8A99CC;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(169, 181, 223, 0.4);
+}
+
+.sbtn-primary:active {
+    background-color: #98A5CE;
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(169, 181, 223, 0.3);
 }
 
 .section-1 .div-2 {
