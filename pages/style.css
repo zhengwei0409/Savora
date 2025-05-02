@@ -132,3 +132,30 @@ table {
     padding: 16px;
     padding-right: 65px;
 }
+
+
+#button-bottom-align{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    gap: 20px;         
+}
+
+.bottom-btn {
+    background-color: #2D336B;
+    width: 200px;
+    color: white;                
+    border: none;              
+    padding: 10px 20px;        
+    border-radius: 8px;        
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.bottom-btn:hover {
+    background-color: #444996;  
+    transform: scale(1.03);    
+}
