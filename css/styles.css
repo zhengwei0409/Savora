@@ -1,84 +1,70 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+  }
+  /* Apply custom brand color to the whole navbar */
 .custom-navbar {
     background-color: #2D336B !important;
-
 }
 
-.navbar {
-    padding-top: 20px;   /* Adjust this value to make the navbar taller */
-    padding-bottom: 20px; /* Adjust this value to make the navbar taller */
-}
-  
+/* Text colors and hover for navbar links and brand */
 .custom-navbar .nav-link,
 .custom-navbar .navbar-brand,
 .custom-navbar .btn {
     color: white !important;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
 }
 
-.custom-navbar .nav-link:hover {
+.custom-navbar .nav-link:hover,
+.custom-navbar .navbar-brand:hover {
     color: #ccc !important;
 }
-  
-.navbar, h1, p {
+
+/* Active nav link styling */
+.custom-navbar .nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+
+/* Nav items spacing and font */
+.navbar-nav .nav-item {
+    margin-right: 40px;
+    font-size: 14px;
+}
+
+.logo {
+    height: 60px;
+    padding: 0px;
+}
+
+/* Brand text style */
+.navbar-brand {
+    font-size: 20px;
+    font-weight: 900;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Person icon button (Sign up/Log in) */
+.custom-navbar .btn-outline-primary {
+    color: white !important;
+    border-color: white;
+    font-weight: 500;
+}
+
+.custom-navbar .btn-outline-primary:hover {
+    background-color: white;
+    color: #2D336B !important;
+    border-color: white;
+}
+
+/* Font settings globally */
+.navbar{
     font-family: 'Inter', sans-serif;
 }
 
-
-.navbar-nav .nav-item {
-    margin-right: 40px; /* Adds space between navbar items */
-    font-size: 14px; /* Adjusts the size of the navbar items */
-}
-
-.navbar-brand {
-    font-size: 20px; /* Adjusts the size of the brand text */
-    margin-right: 40px; /* Adds space between navbar items */
-    font-weight: 900; /* Makes the brand text extra bold */
-}
-
-.display-5 {
-    font-size: 40px; /* Adjusts the size of the brand text */
-    font-weight: 900; /* Makes the display text bold */
-    color: #2D336B; /* Sets the color of the display text */
-    margin: 0;
-}
-
-/* Custom styles for the specific page */
-.custom-container .row {
-    padding: 40px;  /* Padding for 'My Investment Goals' */
-
-}
-
-.custom-container .col-6.d-flex.justify-content-end button {
-    padding-right: 10px; /* Padding for the buttons */
-}
-
-.btn-spacing {
-    margin-right: 20px; /* Adjust to your desired spacing */
-}
-
-.custom-expense-button {
-    background-color: #7886C7;
-    border: 2px solid #A9B5DF;
-    font-weight: bold;
-    color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* soft drop shadow */
-    border-radius: 10px;
-}
-
-.custom-expense-button:hover {
-    background-color: #5a67a7; /* slightly darker on hover */
-    border: 3px solid #A9B5DF;
-    font-weight: bold;
-    color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* soft drop shadow */
-    border-radius: 10px;
-}
-
-.btn-remind {
-    background-color: #F86D6D;
-    color: white;
-    border: 3px solid #FFBEBE;
-    font-weight: bold;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow */
-    border-radius: 10px;
-  }
-  
