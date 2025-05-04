@@ -30,8 +30,13 @@
                     <form class="profile-form">
 
                         <tr class="border-up">
+                            <th class="th-align"><label>Name</label></th>
+                            <td class="td-align" id="user-name"><input type="email" value="Elon Musk" /></td>
+                        </tr>
+
+                        <tr class="border-up">
                             <th class="th-align"><label>Email</label></th>
-                            <td class="td-align" id="user-Occ"><input type="email" value="elonmuskveryrich@gmail.com" /></td>
+                            <td class="td-align" id="user-email"><input type="email" value="elonmuskveryrich@gmail.com" /></td>
                         </tr>
                         
                         <tr class="border-up">
@@ -41,12 +46,12 @@
                         
                         <tr class="border-up">
                             <th class="th-align"><label>Income (RM)</label></th>
-                            <td class="td-align" id="user-Occ"><input type="number" value="1500" /></td>
+                            <td class="td-align" id="user-Inc"><input type="number" value="1500" /></td>
                         </tr>
 
                         <tr class="border-up">
                             <th class="th-align"><label>Country</label></th>
-                            <td class="td-align" id="user-Occ">
+                            <td class="td-align" id="user-Country">
                                 <select>
                                     <option>Malaysia</option>
                                     <option>Singapore</option>
@@ -57,21 +62,31 @@
                 
                         <tr class="border-up">
                             <th class="th-align"><label>Gender</label></th>
-                            <td class="td-align" id="user-Occ">
+                            <td class="td-align" id="user-Gender">
                                 <div class="gender-group">
-                                    <label><input type="radio" name="gender" /> Female</label>
-                                    <label><input type="radio" name="gender" checked /> Male</label>
+                                    <label>
+                                        <span>Female</span>
+                                        <input type="radio" name="gender" />
+                                    </label>
+                                  
+                                    <label>
+                                        <span>Male</span>
+                                        <input type="radio" name="gender" checked />
+                                    </label>
                                 </div>
                             </td>
                         </tr>
                         
                         <tr class="border-up">
                             <th class="th-align"> <label>Date of birth</label></th>
-                            <td class="td-align" id="user-Occ"><input type="date" value="2025-04-09" /></td>
+                            <td class="td-align" id="user-DOB"><input type="date" value="2025-04-09" /></td>
                         </tr>
 
                         <tr class="border-up">
-                            <th class="th-align" colspan="2"><button type="submit">Save Change</button></th>
+                            <th class="th-align" colspan="2">
+                                <div class="button-align">
+                                    <button type="submit" class="custom-btn">Save Change</button></th>
+                                </div>
                         </tr>
                         
                     </form>
