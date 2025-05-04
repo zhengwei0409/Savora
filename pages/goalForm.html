@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savora-Create Goal</title>
+
+    <!--Link the font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--Link the stylesheet-->
+    <link href="../css/goalForm.css" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <!--Link the bootstrap-->
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="header">
+        <header>
+            <div class="header-div">
+                <div>
+                    <a href="#"><img src="../assets/images/savora-logo.png" class="logo"></a>
+                    <div class="nav-bar">
+                        <nav>
+                            <a href="#" class="">Dashboard</a>
+                            <a href="goalForm.html" class="">Strategy</a>
+                            <a href="#" class="">Market Insight</a>
+                            <a href="calculator.html" class="">Calculator</a>
+                            <a href="#" class="active">Learning</a>
+                            <a href="#" class="">AI Chatbot</a>
+                        </nav>
+                    </div>
+                </div>
+                <div>
+                    <button class="sbtn-outline"><span class="bi bi-person-circle"></span>Elon Musk</button>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center mb-4 mb-md-0">
+                <img src="../assets/images/financial-goal.png" alt="Illustration" class="img-fluid">
+            </div>
+      
+            <div class="col-md-6">
+                <h2 class="goal-title">Create your goal now!</h2>
+      
+                <form>
+                    <div class="p-4 rounded-4 shadow bg-form">
+
+                    <!-- Goal Name -->
+                    <div class="mb-3">
+                    <label for="goalName" class="form-label fw-medium">Goal Name</label>
+                    <input type="text" class="form-control" id="goalName" placeholder="e.g. Emergency Fund, Trip to Japan">
+                    </div>
+        
+                    <!-- Type of Goal -->
+                    <div class="mb-3">
+                        <label class="form-label fw-medium">Type of goal</label>
+                        <div class="d-flex gap-3 flex-wrap">
+                          <label class="custom-radio-box">
+                            <span>Short term</span>
+                            <input type="radio" name="goalType" id="shortTerm">
+                          </label>
+                          <label class="custom-radio-box">
+                            <span>Medium term</span>
+                            <input type="radio" name="goalType" id="mediumTerm">
+                          </label>
+                          <label class="custom-radio-box">
+                            <span>Long term</span>
+                            <input type="radio" name="goalType" id="longTerm">
+                          </label>
+                        </div>
+                      </div>
+        
+                    <!-- Goal Priority -->
+                    <div class="mb-3">
+                        <label class="form-label fw-medium">Goal Priority</label>
+                        <div class="d-flex gap-3 flex-wrap">
+                          <label class="custom-radio-box">
+                            <span>Low priority</span>
+                            <input type="radio" name="goalPriority" id="lowPriority">
+                          </label>
+                          <label class="custom-radio-box">
+                            <span>Medium priority</span>
+                            <input type="radio" name="goalPriority" id="mediumPriority">
+                          </label>
+                          <label class="custom-radio-box">
+                            <span>High priority</span>
+                            <input type="radio" name="goalPriority" id="highPriority">
+                          </label>
+                        </div>
+                      </div>
+        
+                    <!-- Saving Duration -->
+                    <div class="mb-3">
+                    <label for="duration" class="form-label fw-medium">Saving Duration</label>
+                    <input type="date" class="form-control" id="duration">
+                    <div class="form-text" id="durationDisplay">Duration: 0 years 0 months</div>
+                    </div>
+        
+                    <!-- Goal Category -->
+                    <div class="mb-3">
+                    <label for="goalCategory" class="form-label fw-medium">Goal Category</label>
+                    <select class="form-select" id="goalCategory">
+                        <option selected disabled>Choose category</option>
+                        <option>Lifestyle</option>
+                        <option>Education</option>
+                        <option>Family</option>
+                        <option>Travel</option>
+                        <option>Investment</option>
+                        <option>Personal Goal</option>
+                        <option>Others</option>
+                    </select>
+                    </div>
+        
+                    <!-- Target Amount -->
+                    <div class="mb-4">
+                    <label for="targetAmount" class="form-label fw-medium">Target Amount</label>
+                    <input type="text" class="form-control" id="targetAmount" placeholder="RM">
+                    </div>
+        
+                    <!-- Buttons -->
+                    <div class="button-container">
+                        <button type="reset" class="btn-cancel">Cancel</button>
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="footer">
+        <footer>
+            <div class="footer-1">
+                <a href="#"><img src="../assets/images/savora-logo.png" class="logo"></a>
+            </div>
+            <div class="footer-2">
+                <div>
+                    <div class="title-small">Customer Service</div>
+                    <div class="footer-contact-text">+60 488 6969</div>
+                    <div class="footer-text">Mon-Fri, 8:30 - 16:30 MYT</div>
+                    <button class="sbtn-outline">Online Inquiry</button>
+                    <div class="footer-contact-text-email">cs@my.savora.com</div>
+                </div>
+                <div>
+                    <div class="title-small">About Savora</div>
+                    <a href="#"><div class="footer-text">About Savora</div></a>
+                    <a href="#"><div class="footer-text">Newsroom</div></a>
+                </div>
+                <div>
+                    <div class="title-small">Terms & Conditions</div>
+                    <a href="#"><div class="footer-text">Terms of Use</div></a>
+                    <a href="#"><div class="footer-text">Privacy Policy</div></a>
+                    <a href="#"><div class="footer-text">Terms and Agreements</div></a>
+                </div>
+                <div>
+                    <div>
+                        <div class="title-small">Careers / Contact:</div>
+                        <a href="#"><div class="footer-text">Apply Now</div></a>
+                        <div class="footer-text">hr@my.savora.com</div>
+                    </div>
+                    <div class="footer2-col3-social">
+                        <div class="title-small">Follow us on</div>
+                        <a href="#"><span class="bi bi-facebook"></span></a>
+                        <a href="#"><span class="bi bi-instagram"></span></a>
+                        <a href="#"><span class="bi bi-linkedin"></span></a>
+                        <br>
+                        <a href="#"><span class="bi bi-twitter-x"></span></a>
+                        <a href="#"><span class="bi bi-telegram"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-3">
+                <div class="footer-text">Investment Disclaimer   Investing involves risk, and past performance does not guarantee future results. Always conduct thorough research and consult with financial professionals before making any investment decisions. Your financial goals and risk tolerance should guide your choices.</div>
+                <div class="footer-text">Copyright © 2025 Savora Technologies Inc. All Rights Reserved.</div>
+            </div>
+        </footer>
+    </div>
+      <script src="../js/goalForm.js"></script>
+</body>
+</html>

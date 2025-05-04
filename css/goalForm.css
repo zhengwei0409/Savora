@@ -1,0 +1,141 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.bg-form {
+    background-color: #A5B9EF;
+    width: 200%;
+}
+
+img.img-fluid {
+    margin-left: -100px;
+    max-width: 90%;
+}
+
+.goal-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800; 
+    font-size: 40px;
+    color: #2D336B;
+    text-align: left;
+    margin-left: -79px;
+    margin-bottom: 1.5rem;
+}
+
+.form-control,
+.form-select {
+    border-radius: 10px;
+}
+
+.form-label,
+.form-check-label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; /* Inter Semi-Bold */
+    font-size: 22px;
+    color: #303E7B;
+}
+
+@media (min-width: 768px) {
+    .bg-form {
+      width: 110%;
+      margin-left: -80px;
+    }
+  }
+
+  .custom-radio-box {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 170px;
+    flex: 1;
+    cursor: pointer;
+}
+
+.custom-radio-box input[type="radio"] {
+    width: 18px;
+    height: 18px;
+}
+
+.custom-radio-box span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #303E7B;
+}
+
+.custom-radio-box input[type="radio"] {
+    margin-left: 10px;
+}
+
+input[type="text"]
+input[type="date"]
+select {
+    padding: 10px;
+    border-radius: 8px;
+}
+
+input, textarea, select {
+    font-size: 14px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;  /* Center buttons horizontally */
+    gap: 30px;  /* Space between buttons */
+    margin-top: 20px;  /* Optional: Adds margin at the top */
+}
+
+.btn-cancel {
+    background-color: #CBCBCB; 
+    border: 1px solid #989898; 
+    padding: 12px 55px;  
+    color: #67676B;  
+    font-size: 13px;  
+    font-weight: 600;  
+    border-radius: 15px;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.btn-submit {
+    background-color: #303E7B;  
+    border: none;  
+    padding: 12px 55px;  
+    color: white;  
+    font-size: 13px;  
+    font-weight: 600; 
+    border-radius: 15px;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+h2 {
+    font-weight: 700;
+}
+
+
+.mb-3 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 2rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.gap-2 {
+    gap: 10px;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.form-check-label {
+    font-size: 14px;
+}
