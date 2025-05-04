@@ -44,7 +44,7 @@
 }
 
 .section-1 {
-    height: 1000px;
+    height: 100%;
     width: 100%;
     padding: 80px 150px 80px 150px;
 }
@@ -152,4 +152,18 @@
     display: inline-block;
     margin-left: 8px;
     animation: twinkle 2s ease-in-out infinite;
+}
+
+.error-message {
+    color: #FE6161;
+    margin-top: -20px;
+}
+
+.analysis-results {
+    background-color: #f8f9fa;
+    border-left: 4px solid #8e44ad;
+  }
+  
+.analysis-content p {
+    margin-bottom: 0.5rem;
 }

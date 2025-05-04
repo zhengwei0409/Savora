@@ -61,3 +61,7 @@
     border-radius: 30px;
     font-size: 14px;
 }
+
+.sbtn-primary:hover {
+    box-shadow: 0 0 5px 1px #2d336b52;
+}
