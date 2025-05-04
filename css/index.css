@@ -52,8 +52,8 @@ main .logo {
 
 .sbtn-primary {
     border: none;
-    background-color: #A9B5DF;
-    color: white;
+    background-color: #7e90cb;
+    color: rgb(255, 255, 255);
     padding: 10px 30px;
     border-radius: 30px;
     font-size: 14px;
