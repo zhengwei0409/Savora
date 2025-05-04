@@ -1,12 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // Load header
-    fetch('header.html')
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById('header').innerHTML = data;
-      });
-});
-
 const userImage = ''; // Assume fetched from DB
 const img = document.getElementById('user-image');
 img.src = userImage || '/images/person-circle.png';

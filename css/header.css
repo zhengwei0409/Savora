@@ -1,0 +1,80 @@
+header{
+    background-color: #2D336B;
+    color: white;
+    padding: 20px;
+
+}
+
+
+.nav-menu{
+    display: flex;
+    padding-top: 10px;
+    gap: 50px; 
+    width: 87%;
+    
+}
+
+header div a img{
+    width: 70%;      
+    height: auto;
+}
+
+header #header{
+    display: flex;
+    padding-left: 15px;
+}
+
+.title{
+    font-weight: 500;
+}
+
+.logo{
+    justify-content: center;  
+    display: flex;
+    align-items: center;
+ 
+}
+
+header div h1{
+    color: #E2E7FA;
+    font-size: 20px;
+    font-weight: 350;
+}
+
+header div h1 a{
+    color: #E2E7FA;
+    font-size: 20px;
+}
+
+header div h1 a:hover{
+    color: #A9B5DF;;  
+    transform: scale(1.03);   
+}
+
+.sbtn-outline {
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 5px 15px 5px 15px;
+    border-radius: 30px;
+    transition: 0.5s;
+    width: 100%;
+    text-align: center;
+}
+
+.sbtn-outline:hover {
+    transition: 1s;
+    background-color: white;
+    color: #2D336B;
+
+}
+
+.sbtn-outline .bi {
+    margin-right: 10px;
+}
+
+.align-right {
+    display: flex;
+    justify-content: flex-end;
+   
+}

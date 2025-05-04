@@ -1,0 +1,149 @@
+.update-profile-tab{
+    align-items: center;
+    background-color: #A9B5DF;
+    border-radius: 30px;
+    margin: 100px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 20px 30px 30px 30px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); 
+    border: 3px solid #303E7B;
+}
+  
+.close-btn {
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 10;
+    display: flex;
+    justify-content: end;
+    color: #2f316b;
+  }
+  
+  .close-btn a {
+    color: #2f316b;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+  
+  .close-btn a:hover {
+    color: #dee3fb;
+    transform: scale(1.1);
+  }
+
+  .profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .avatar-wrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+  }
+
+  
+  .edit-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #dee3fb;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .edit-icon img {
+    width: 16px;
+    height: 16px;
+  }
+  
+  
+  .content-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .border-up {
+    border-top: 1px solid #ffffff;
+  }
+  
+  .th-align {
+    color: white;
+    text-align: left;
+    padding: 10px;
+    width: 40%;
+    vertical-align: top;
+  }
+  
+  .td-align {
+    padding: 10px;
+    width: 60%;
+  }
+  
+  /* Labels and Inputs */
+  .profile-form label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .td-align input[type="text"],
+  .td-align input[type="email"],
+  .td-align input[type="number"],
+  .td-align input[type="date"],
+  .td-align select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    text-align: right;
+
+  }
+  
+  /* Gender Options */
+  .gender-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .gender-group label {
+    font-weight: normal;
+  }
+  
+  /* Button Styling */
+  #btn-submit {
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  button {
+    background: #2f316b;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #1e1f50;
+  }
