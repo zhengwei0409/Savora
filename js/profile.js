@@ -29,3 +29,56 @@ genderElement.textContent = userCountry || 'Gender not provided';
 const userDOB = ''; // Assume fetched from DB
 const dobElement  = document.getElementById('user-DOB');
 dobElement.textContent = userDOB || 'Date of birth not provided';
+
+
+document.getElementById("logout-btn").addEventListener("click", function() {
+    let floatingTab = document.getElementById("floatingTab1");
+    let backgroundOverlay = document.getElementById("backgroundOverlay");
+
+    floatingTab.style.display = "flex";
+    backgroundOverlay.style.display = "block";
+
+    document.body.style.overflow = "hidden";
+});
+
+document.getElementById("delete-btn").addEventListener("click", function() {
+    let floatingTab = document.getElementById("floatingTab2");
+    let backgroundOverlay = document.getElementById("backgroundOverlay");
+
+
+    floatingTab.style.display = "flex";
+    backgroundOverlay.style.display = "block";
+
+    document.body.style.overflow = "hidden";
+
+});
+
+document.getElementById("cancelLogout").addEventListener("click", function() {
+    let floatingTab = document.getElementById("floatingTab2");
+    let backgroundOverlay = document.getElementById("backgroundOverlay");
+
+    floatingTab.style.display = "none";
+    backgroundOverlay.style.display = "none";
+
+    document.body.style.overflow = "auto";
+});
+
+document.getElementById("cancelLogout").addEventListener("click", function() {
+    let floatingTab = document.getElementById("floatingTab1");
+    let backgroundOverlay = document.getElementById("backgroundOverlay");
+
+    floatingTab.style.display = "none";
+    backgroundOverlay.style.display = "none";
+
+    document.body.style.overflow = "auto";
+
+
+});document.getElementById("canceldelete").addEventListener("click", function() {
+    let floatingTab = document.getElementById("floatingTab2");
+    let backgroundOverlay = document.getElementById("backgroundOverlay");
+
+    floatingTab.style.display = "none";
+    backgroundOverlay.style.display = "none";
+
+    document.body.style.overflow = "auto";
+});

@@ -21,7 +21,7 @@
             </div>
             
             <div id="button-align">
-                <a href=""><button class="custom-btn">Change Password</button></a>
+                <a href="change_pass.html"><button class="custom-btn">Change Password</button></a>
                 <a href="update_profile.html"><button class="custom-btn">Edit Profile</button></a>
             </div>
         </div>
@@ -44,6 +44,11 @@
                     <th class="th-align">Country</th>
                     <td class="td-align" id="user-Country">Malaysia</td>
                 </tr>
+
+                <tr class="border-up">
+                    <th class="th-align">Gender</th>
+                    <td class="td-align" id="user-Gender">Male</td>
+                </tr>
     
                 <tr class="border-up border-down">
                     <th class="th-align">Date of birth</th>
@@ -57,8 +62,34 @@
         
 
         <div id="button-bottom-align">
-            <button class="bottom-btn">Logout</button>
-            <button class="bottom-btn" style="background-color: #F62C2C;">Delete Account</button>
+            <button class="bottom-btn" id="logout-btn">Logout</button>
+            <button class="bottom-btn" id="delete-btn" style="background-color: #F62C2C;">Delete Account</button>
+        </div>
+
+        <div id="backgroundOverlay" class="overlay"></div> <!-- Background overlay -->
+
+        <div id="floatingTab1" class="floating-tab">
+            <div class="confirmation-title">
+                <h2>Logout Confirmation</h2>
+                <p>Are you sure you want to logout?</p>
+            </div>
+
+            <div class="floating=btn">
+                <button class="tab-btn confirmButton" id="confirmlogout" >Confirm</button>
+                <button class="tab-btn cancelButton" id="cancelLogout"x>Cancel</button>
+            </div>
+        </div>
+
+        <div id="floatingTab2" class="floating-tab">
+            <div class="confirmation-title">
+                <h2>Delete Confirmation</h2>
+                <p>Are you sure you want to delete?</p>
+            </div>
+
+            <div class="floating=btn">
+                <button class="tab-btn confirmButton" id="confirmdelete" >Confirm</button>
+                <button class="tab-btn cancelButton" id="canceldelete"x>Cancel</button>
+            </div>
         </div>
       
     </main>

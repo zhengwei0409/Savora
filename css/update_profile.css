@@ -25,11 +25,13 @@
     color: #2f316b;
     text-decoration: none;
     transition: transform 0.2s ease, color 0.2s ease;
+    display: inline-block;
   }
   
   .close-btn a:hover {
-    color: #dee3fb;
-    transform: scale(1.1);
+    color: #e6e8f2;
+    transform: scale(1.2);
+    cursor: pointer;
   }
 
   .profile-pic {
