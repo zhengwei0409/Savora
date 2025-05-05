@@ -1,6 +1,7 @@
 // server.js
 const express = require("express");
 const cors = require("cors");
+const mongoose = require("mongoose");
 const { GoogleGenAI } = require("@google/genai");
 require("dotenv").config();
 
@@ -21,6 +22,26 @@ if (!GEMINI_API_KEY) {
 }
 
 const genAI = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
+
+// MongoDB Connection
+mongoose.connect(process.env.MONGODB_URI)
+  .then(() => console.log('Connected to MongoDB Atlas'))
+  .catch(err => console.error('Could not connect to MongoDB Atlas:', err));
+
+// Define Video Schema
+const videoSchema = new mongoose.Schema({
+  embedUrl: String,
+  title: String,
+  author: String,
+  views: String,
+  publishedDate: String,
+  description: String
+});
+
+// Create Video Model
+const Video = mongoose.model('Video', videoSchema);
+
+
 
 // Endpoint to analyze investment data
 app.post("/api/analyze-investment", async (req, res) => {
@@ -69,6 +90,16 @@ app.post("/api/analyze-investment", async (req, res) => {
       success: false,
       message: `Error analyzing investment: ${error.message || "Unknown error"}`
     });
+  }
+});
+
+// API for getting videodb data
+app.get('/api/videos', async (req, res) => {
+  try {
+    const videos = await Video.find();
+    res.json(videos);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
   }
 });
 

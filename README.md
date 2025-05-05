@@ -46,4 +46,10 @@ npm install
 This will install all dependencies listed in package.json, including Bootstrap, Express, MongoDB driver, and others.
 
 💡 Make sure you have Node.js installed before running this command.
+Also rename .env.example to .env and fill in the actual values.
+
+### 3. Run the backend server
+```bash
+npm run dev
+```
 
