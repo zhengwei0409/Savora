@@ -39,13 +39,13 @@
             </div>
         </header>
     </div>
+    
 
     <main class="container py-5">
         <div class="row align-items-center">
             <div class="col-md-6 text-center mb-4 mb-md-0">
                 <img src="../assets/images/financial-goal.png" alt="Illustration" class="img-fluid">
             </div>
-      
             <div class="col-md-6">
                 <h2 class="goal-title">Create your goal now!</h2>
       
@@ -55,7 +55,7 @@
                     <!-- Goal Name -->
                     <div class="mb-3">
                     <label for="goalName" class="form-label fw-medium">Goal Name</label>
-                    <input type="text" class="form-control" id="goalName" placeholder="e.g. Emergency Fund, Trip to Japan">
+                    <input type="text" class="form-control" id="goalName" placeholder="e.g. Emergency Fund, Trip to Japan" required>
                     </div>
         
                     <!-- Type of Goal -->
@@ -64,15 +64,15 @@
                         <div class="d-flex gap-3 flex-wrap">
                           <label class="custom-radio-box">
                             <span>Short term</span>
-                            <input type="radio" name="goalType" id="shortTerm">
+                            <input type="radio" name="goalType" id="shortTerm" required>
                           </label>
                           <label class="custom-radio-box">
                             <span>Medium term</span>
-                            <input type="radio" name="goalType" id="mediumTerm">
+                            <input type="radio" name="goalType" id="mediumTerm" required>
                           </label>
                           <label class="custom-radio-box">
                             <span>Long term</span>
-                            <input type="radio" name="goalType" id="longTerm">
+                            <input type="radio" name="goalType" id="longTerm" required>
                           </label>
                         </div>
                       </div>
@@ -83,15 +83,15 @@
                         <div class="d-flex gap-3 flex-wrap">
                           <label class="custom-radio-box">
                             <span>Low priority</span>
-                            <input type="radio" name="goalPriority" id="lowPriority">
+                            <input type="radio" name="goalPriority" id="lowPriority" required>
                           </label>
                           <label class="custom-radio-box">
                             <span>Medium priority</span>
-                            <input type="radio" name="goalPriority" id="mediumPriority">
+                            <input type="radio" name="goalPriority" id="mediumPriority" required>
                           </label>
                           <label class="custom-radio-box">
                             <span>High priority</span>
-                            <input type="radio" name="goalPriority" id="highPriority">
+                            <input type="radio" name="goalPriority" id="highPriority" required>
                           </label>
                         </div>
                       </div>
@@ -99,14 +99,14 @@
                     <!-- Saving Duration -->
                     <div class="mb-3">
                     <label for="duration" class="form-label fw-medium">Saving Duration</label>
-                    <input type="date" class="form-control" id="duration">
+                    <input type="date" class="form-control" id="duration" required>
                     <div class="form-text" id="durationDisplay">Duration: 0 years 0 months</div>
                     </div>
         
                     <!-- Goal Category -->
                     <div class="mb-3">
                     <label for="goalCategory" class="form-label fw-medium">Goal Category</label>
-                    <select class="form-select" id="goalCategory">
+                    <select class="form-select" id="goalCategory" required>
                         <option selected disabled>Choose category</option>
                         <option>Lifestyle</option>
                         <option>Education</option>
@@ -119,9 +119,9 @@
                     </div>
         
                     <!-- Target Amount -->
-                    <div class="mb-4">
+                    <div class="mb-3">
                     <label for="targetAmount" class="form-label fw-medium">Target Amount</label>
-                    <input type="text" class="form-control" id="targetAmount" placeholder="RM">
+                    <input type="text" class="form-control" id="targetAmount" placeholder="RM" required>
                     </div>
         
                     <!-- Buttons -->
@@ -132,11 +132,11 @@
                 </div>
                 </form>
             </div>
-          </div>
         </div>
-      </main>
+        </div>
+    </main>
 
-      <div class="footer">
+    <div class="footer">
         <footer>
             <div class="footer-1">
                 <a href="#"><img src="../assets/images/savora-logo.png" class="logo"></a>
@@ -183,6 +183,7 @@
             </div>
         </footer>
     </div>
-      <script src="../js/goalForm.js"></script>
+        <script src="../js/goalForm.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
