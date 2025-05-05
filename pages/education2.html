@@ -14,6 +14,10 @@
     <!--Link the boostrap-->
     <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- React and Babel -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
 </head>
 <body>
@@ -45,30 +49,8 @@
         <a href="education2.html"><div class="title active-title">Videos Tutorial</div></a>
     </div>
 
-    <main>
-
-        <section class="section-1">
-            <div class="section-card">
-                <div class="section-card-col1">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Izw-xaVkO0g?si=o_bW2wGZGHYGkXmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="section-card-col2">
-                    <div class="title">10 Crucial Personal Finance Lessons That Transformed My Life</div>
-                    <div class="author-text">Humphrey Yang</div>
-                    <div class="info-text">489K Views 10 months ago</div>
-                    <br>
-                    <div class="author-text">This video presents ten pivotal personal finance lessons. These insights cover topics such as the significance of delayed gratification, the importance of tracking key financial metrics like expenses and net worth, and the principle of simplifying investment portfolios. The lessons also caution against financing depreciating assets and highlight the historically positive long-term returns of stock market investing. Yang emphasises the initial power of aggressive saving, advocates for a boring yet effective investment strategy, and advises against comparing personal finances to peers or emulating a high-spending "30k millionaire" lifestyle, concluding with the importance of individualised risk assessment in financial decision-making.</div>
-                </div>
-            </div>
-            <div class="section-card">
-                card2
-            </div>
-            <div class="section-card">
-                card3
-            </div>
-
-        </section>
-
+    <main id="myVideos">
+        <!-- Inject React Here -->
     </main>
 
     <div class="footer">
@@ -119,6 +101,94 @@
             </div>
         </footer>
     </div>
+
+    <script type="text/babel">
+
+        function VideoList() {
+            const [videos, setVideos] = React.useState([]);
+            const [loading, setLoading] = React.useState(true);
+            const [error, setError] = React.useState(null);
+
+            // Fetch videos when component mounts
+            React.useEffect(() => {
+                // Fetch from your Express API
+                fetch('http://localhost:3000/api/videos')
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        setVideos(data);
+                        setLoading(false);
+                    })
+                    .catch(error => {
+                        console.error('Fetch error:', error);
+                        setError('Failed to load videos. Please try again later.');
+                        setLoading(false);
+                    });
+            }, []);
+
+            // Show loading message
+            if (loading) {
+                return (
+                    <div className="loading-container">
+                        <div className="spinner-border text-primary" role="status">
+                            <span className="visually-hidden">Loading...</span>
+                        </div>
+                        <p>Loading videos...</p>
+                    </div>
+                );
+            }
+
+            // Show error message
+            if (error) {
+                return (
+                    <div className="alert alert-danger" role="alert">
+                        {error}
+                    </div>
+                );
+            }
+
+            // Show videos
+            return (
+                <section className="section-1">
+                    {videos.length === 0 ? (
+                        <div className="no-videos">No videos available</div>
+                    ) : (
+                        videos.map((video, index) => (
+                            <div className="section-card" key={index}>
+                                <div className="section-card-col1">
+                                    <iframe
+                                        width="560"
+                                        height="315"
+                                        src={video.embedUrl}
+                                        title={video.title}
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerPolicy="strict-origin-when-cross-origin"
+                                        allowFullScreen
+                                    ></iframe>
+                                </div>
+                                <div className="section-card-col2">
+                                    <div className="title">{video.title}</div>
+                                    <div className="author-text">{video.author}</div>
+                                    <div className="info-text">{video.views} {video.publishedDate}</div>
+                                    <br />
+                                    <div className="author-text">{video.description}</div>
+                                </div>
+                            </div>
+                        ))
+                    )}
+                </section>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('myVideos'));
+        root.render(<VideoList />);
+
+    </script>
 
     <script src="../js/header.js"></script>
     <script src="../js/education.js"></script>
