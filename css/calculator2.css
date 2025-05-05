@@ -122,9 +122,13 @@
 }
 
 .section-2 {
-    height: 1000px;
+    height: 100%;
     width: 100%;
-    padding: 80px 150px 80px 150px;
+    padding: 80px 150px 180px 150px;
+}
+
+.section-2 .title {
+    margin-bottom: 50px;
 }
 
 .section-2 .title-small {
@@ -136,3 +140,4 @@
     font-size: 25px;
     margin: 10px 0px 50px 0px;
 }
+

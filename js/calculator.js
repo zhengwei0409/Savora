@@ -11,6 +11,6 @@ document.addEventListener("DOMContentLoaded",() => {
 })
 
 
-function scrollToSection() {
+export function scrollToSection() {
     document.querySelector(".section-2").scrollIntoView({ behavior: 'smooth' });
 }
