@@ -1,3 +1,10 @@
+// Show modal on page load
+document.addEventListener('DOMContentLoaded', function() {
+    var profileModal = new bootstrap.Modal(document.getElementById('profileCompletionModal'));
+    profileModal.show();
+});
+
+
 function calculateDuration() {
     var selectedDate = document.getElementById('duration').value;
     if (!selectedDate) return; 
