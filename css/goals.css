@@ -55,19 +55,17 @@
   border-radius: 10px;
 }
 
-.goal-term h5 {
-  margin: 0;
-}
+
 
 .risk-level-indicator {
   display: flex;
   gap: 2px;
-  padding-left: 50px;
+  /* padding-left: 50px; */
 }
 
 .risk-box {
-  width: 24px;
-  height: 15px;
+  width: 28px;
+  height: 16px;
   border: 2px solid #888;
   background-color: #fff;
   margin-right: 1px; /* Slight overlap to fix double border effect */
@@ -115,8 +113,11 @@
 .term-label {
   margin: 0;
   font-size: 1rem;
-  min-width: 100px; /* Optional: aligns all rows */
+  padding-right: 50px;
+  font-weight: bold;
+  /* min-width: 100px; Optional: aligns all rows */
 }
+
 
 .goal-count {
   background-color: #e0e0e0;
@@ -316,8 +317,157 @@
     margin-top: 3px;
   }
 
-  html, body {
-    margin: 0;
-    padding: 0;
+  .custom-modal {
+    background-color: #ECF0FF;
+    border: 3px solid #7886C7;
+    border-radius: 22px;
+    padding: 20px;
+  }
+
+  /* Modal title styling */
+  .custom-modal .modal-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2D336B;
+    padding: 15px 0px;
   }
   
+
+  .modal-body {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding:0px 0px;
+    width: 100%;
+  }
+
+  .custom-strategy-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+    /* Badge color and spacing */
+.strategy-box{
+  padding: 15px 30px 30px;
+}
+
+
+
+.strategy-box .badge {
+  display: inline-flex;
+  gap: 20px;
+  padding: 8px 15px;
+  background-color: #D1FFC9;
+  border-radius: 4px;
+}
+
+.risk-box-sm {
+  width: 15px;
+  height: 11px;
+  border: 1px solid #888;
+  background-color: #fff;
+  /* margin-right: 1px; Slight overlap to fix double border effect */
+}
+
+.risk-row {
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0px;
+}
+
+
+/* Strategy name heading */
+.strategy-box h6 {
+  font-weight: bold;
+  padding: 12px;
+  font-size: 1.2rem;
+}
+
+
+/* Key-value pair layout */
+.strategy-box .strategy-pair {
+  display: flex;
+  justify-content: space-between;
+  font-weight: normal;
+  margin-bottom: 4px;
+  font-size: 13px;
+  padding-top: 5px;
+}
+
+.details-section {
+  padding-top: 3rem;
+  margin-top: 0.5rem;
+  background-color: #00cc00;
+}
+
+.allocation-section {
+  padding-top: 1rem;
+  text-align: left;
+  height: 125px;
+  overflow: auto;
+}
+
+.section-heading, .avoid-label {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.section-content, .avoid-content {
+  padding-top: 3px;
+  font-size: 12px;
+  text-align: start;
+}
+
+.allocation-section .h2 {
+  font-size: 3px; 
+}
+
+.avoid-section {
+  padding-top: 10px;
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+/* Description below */
+.description-text {
+  text-align: left;
+  padding-top: 20px;
+  font-size: 13px;
+}
+
+
+.vertical-divider {
+  width: 3px;
+  background-color: #E2E7FA;
+  height: 85%;
+}
+
+/* Base button style */
+.custom-button {
+  padding: 8px 15px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+/* Change Strategy button */
+.custom-button-outline {
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #C5C5C5;
+}
+
+/* Current Strategy button */
+.custom-button-primary {
+  background-color: #2D336B;
+  color: white;
+  border: 2px solid #A9B5DF;
+}
+
+/* Hover shadow effect for all buttons */
+.custom-button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+

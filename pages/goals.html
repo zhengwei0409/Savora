@@ -16,47 +16,37 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
-    <!-- <link href="/css/navbar.css" rel="stylesheet"> -->
+    <link href="/css/navbar.css" rel="stylesheet">
     <link href="/css/goals.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <link href="../css/goalDetails.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg custom-navbar py-0 shadow-sm">
-    <div class="container-fluid">
-      
-      <!-- Logo -->
-      <a class="navbar-brand" href="index.html">
-        <img src="/assets/images/savora-logo.png" alt="Savora Logo" class="logo">
-      </a>
-  
-      <!-- Toggler (for mobile) -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <!-- Navbar links -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="/index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="/about.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/help.html">Help</a>
-          </li>
-        </ul>
-  
-        <!-- Sign up/Login Button -->
-        <a href="login.html" class="btn btn-outline-primary">
-          <i class="bi bi-person"></i> Sign up / Log in
-        </a>
-      </div>
-    </div>
-  </nav>
+  <div class="header">
+    <header>
+        <div class="header-div">
+            <div>
+                <a href="#"><img src="../assets/images/savora-logo.png" class="logo"></a>
+                <div class="nav-bar">
+                    <nav>
+                        <a href="#" class="">Dashboard</a>
+                        <a href="goalForm.html" class="">Strategy</a>
+                        <a href="#" class="">Market Insight</a>
+                        <a href="calculator.html" class="">Calculator</a>
+                        <a href="#" class="active">Learning</a>
+                        <a href="#" class="">AI Chatbot</a>
+                    </nav>
+                </div>
+            </div>
+            <div>
+                <button class="sbtn-outline"><span class="bi bi-person-circle"></span>Elon Musk</button>
+            </div>
+        </div>
+    </header>
+</div>
 
     <main>
         <div class="container-fluid custom-container">
@@ -92,7 +82,7 @@
                 </div>
                 
 
-                <div class="custom-goal-card mb-2">
+                <div class="custom-goal-card mb-2" data-bs-toggle="modal" data-bs-target="#goalDetailsModal" role="button" tabindex="0">
                   <div class="card-header">
                     <div>
                       <h5 class="goal-title">Buy Toyota Camry</h5>
@@ -120,7 +110,7 @@
                 
                     <div class="card-actions">
                       <div class="action-group">
-                        <button class="btn-secondary"><i class="bi bi-book"></i> View Strategy</button>
+                        <button class="btn-secondary"  data-bs-toggle="modal" data-bs-target="#strategyModal"><i class="bi bi-book"></i> View Strategy</button>
                         <button class="btn-success"><i class="bi bi-cash-coin"></i> Add Savings</button>
                       </div>
                       <button class="btn-options"><i class="bi bi-three-dots-vertical"></i></button>
@@ -308,5 +298,275 @@
           </div>
           
     </main>
+
+  <!-- Modal- Goal Details -->
+  <div class="modal fade" id="goalDetailsModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content" style="border-radius: 12px;">
+          <div class="modal-header border-0 pb-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          
+          <div class="modal-body pt-0">
+          <div class="goal-container" style="box-shadow: none; margin: 0;">
+              <div class="goal-header">
+                  <div class="goal-row">
+                      <div class="goal-title-container">
+                          <div class="goal-title-row">
+                              <h3 class="goal-title">Buy Toyota Camry</h3>
+                              <img src="../assets/images/Subtract.png" alt="icon" class="goal-icon" />
+                          </div>
+                          <div class="badge-container">
+                              <span class="goal-badge">Major Purchase</span>
+                              <span class="custom-badge">Short-Term Goal</span>
+                          </div>
+                      </div>
+                      <div class="target-amount-container">
+                          <div class="target-label">Target Amount</div>
+                          <div class="target-amount-value">RM 40,000</div>
+                      </div>
+                  </div>
+                  <div class="goal-duration-block">
+                      <div class="goal-duration-item">
+                        <span class="label">Saving Duration:</span>
+                        <span class="value">3 years 0 months</span>
+                      </div>
+                      <div class="goal-duration-item">
+                        <span class="label">Remaining Time:</span>
+                        <span class="value">1 year 11 months</span>
+                      </div>
+                  </div>
+                  <div class="strategy-priority-container">
+                      <span class="strategy-label">Aggressive Investor Strategy 🔴</span>
+                      <div class="priority-label-container">
+                          <span class="priority-label">High Priority</span>
+                          <img src="../assets/images/priority.png" alt="priority-icon" class="priority-icon" />
+                      </div>
+                  </div>
+          
+              </div>
+              
+              <div class="goal-body">
+                  <div class="monthly-target">
+                      <div class="target-section">
+                          <div class="stat-label">Recommended amount saved per month:</div>
+                          <div class="target-amount">RM 3,200</div>
+                      </div>
+                      <div class="savings-section d-flex flex-row justify-content-between align-items-start gap-4">
+                          <div class="current-savings">
+                              <div class="stat-label">Amount saved this month:</div>
+                              <div class="savings-amount">RM 3,200
+                                  <img src="../assets/images/savingAchieve.png" alt="saved icon" class="saved-icon" />
+                              </div>
+                          </div>
+                          <div class="progress-container">
+                              <div class="savings-progress">
+                                  <div class="progress-info">
+                                      <span class="saved-percentage">63% Saved</span>
+                                  </div>
+                                  <div class="progress" style="height: 8px; background: #E2E7FA; border-radius: 4px;">
+                                      <div class="progress-bar" role="progressbar" style="width: 63%; background: #555FBB;" 
+                                           aria-valuenow="63" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                  <span class="savings-ratio">RM 25,200 / RM 40,000</span>
+                              </div>
+                          </div>
+                      </div>
+                      
+                  </div>
+              </div>
+          
+
+          </div>
+              
+              <div class="goal-actions">
+                  <button class="btn-strategy">
+                      <img src="../assets/images/view-strategy-icon.png" alt="icon" class="btn-view-icon" />
+                      View Strategy</button>
+                  <button class="btn-add">
+                      <img src="../assets/images/add-savings-icon.png" alt="icon" class="btn-add-icon" />
+                      Add Savings</button>
+              </div>
+          </div>
+          </div>
+      </div>
+      </div>
+  </div> 
+
+    <div class="modal fade" id="strategyModal" tabindex="-1" aria-labelledby="strategyModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content custom-modal">
+    
+    
+          <div class="modal-body">
+            
+          <div class="modal-header border-0">
+            <h5 class="modal-title w-100 text-center">Investment Strategy For Goal: Buy a car</h5>
+            <button type="button" class="btn-close position-absolute end-0 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          
+          <div class="row g-0 text-center align-items-stretch">
+    
+              <!-- Column 1: Safe & Steady -->
+              <div class="col">
+                <div class="strategy-box ">
+
+                   <!-- Side-by-side LOW RISK and risk indicator -->
+                  <div class="badge risk-row align-items-center mb-3">
+                    <p class="text-dark mb-0">Low Risk</p>
+                    <div class="risk-level-indicator short-term">
+                      <div class="risk-box  risk-box-sm filled start green"></div>
+                      <div class="risk-box risk-box-sm  middle"></div>
+                      <div class="risk-box risk-box-sm  end"></div>
+                    </div>
+                  </div>
+
+
+                  <h6 class="fw-bold">Safe & Steady</h6>
+              
+                  <div class="details-seciton">
+                    <div class="strategy-pair"><span>Monthly Saving:</span><span>RM 3,200</span></div>
+                    <div class="strategy-pair"><span>Expected Return:</span><span>~ 2.9%</span></div>
+                    <div class="strategy-pair"><span>Estimated Total:</span><span>~ RM 205,000</span></div>
+                    <div class="strategy-pair"><span>Duration:</span><span>5 years</span></div>
+                  </div>
+
+                  <div class="allocation-section text-start">
+                    <p class="section-heading mb-1">Allocation:</p>
+                    <div class="section-content mb-2">
+                      <li>70% Fixed Deposit (FD)</li>
+                      <li>20% Savings Account</li>
+                      <li>10% Government Bonds</li>
+                    </div>
+                  </div>
+
+                  <!-- Avoid section -->
+                  <div class="avoid-section">
+                    <p class="avoid-label text-start mb-0">Avoid:</p>
+                    <p class="avoid-content text-start mb-2">Risky Assets, early withdrawals.</p>
+                  </div>
+
+                  <p class="description-text">Perfect for users who don’t want any surprises. <br>
+                     Ensures target is met, but no growth beyond it.</p>
+              
+                  <button class="custom-button custom-button-outline">Change Strategy 🔁</button>
+                </div>
+              </div>
+              
+              <!-- Divider -->
+              <div class="col-auto d-none d-md-flex justify-content-center align-items-stretch">
+                <div class="vertical-divider"></div>
+              </div>
+
+              <!-- Column 2: Balanced Growth -->
+              <div class="col">
+                <div class="strategy-box recommended">
+              
+              
+                  <!-- Combined badge row -->
+                  <div class="d-flex align-items-center gap-2 mb-3">
+                    <!-- MODERATE RISK with indicators -->
+                    <div class="badge risk-row align-items-center" style="background-color: #FFE7C9;">
+                      <p class="text-dark mb-0">Moderate Risk</p>
+                      <div class="risk-level-indicator short-term">
+                        <div class="risk-box risk-box-sm filled start orange"></div>
+                        <div class="risk-box risk-box-sm filled middle orange"></div>
+                        <div class="risk-box risk-box-sm end"></div>
+                      </div>
+                    </div>
+
+                    <!-- Recommended badge -->
+                    <span class="badge risk-row align-items-center text-dark" style="background-color: #FFE7C9;">Recommended ⭐</span>
+                  </div>
+
+                  <h6 class="fw-bold">Balanced Growth</h6>
+              
+                  <div class="details-seciton">
+                    <div class="strategy-pair"><span>Monthly Saving:</span><span>RM 2,700</span></div>
+                    <div class="strategy-pair"><span>Expected Return:</span><span>~ 5–6%</span></div>
+                    <div class="strategy-pair"><span>Estimated Total:</span><span>~ RM 215,000</span></div>
+                    <div class="strategy-pair"><span>Duration:</span><span>5 years</span></div>
+                  </div>
+              
+                  <div class="allocation-section text-start">
+                    <p class="section-heading mb-1">Allocation:</p>
+                    <div class="section-content mb-2">
+                      <li>40% Mutual Funds</li>
+                      <li>30% Fixed Deposit</li>
+                      <li>20% Robo-Advisors</li>
+                      <li>10% Savings</li>
+                    </div>
+                  </div>
+              
+                  <div class="avoid-section">
+                    <p class="avoid-label section-heading text-start mb-0">Avoid:</p>
+                    <p class="avoid-content section-content text-start mb-2">Emotional trading, high-fee funds.</p>
+                  </div>
+              
+                  <p class="description-text">Blends safety and returns. Good for users who want better results but can tolerate small dips.</p>
+              
+                  <button class="custom-button custom-button-primary">Current Strategy ✔️</button>
+                </div>
+              </div>
+              
+    
+               <!-- Divider -->
+               <div class="col-auto d-none d-md-flex justify-content-center align-items-stretch">
+                <div class="vertical-divider"></div>
+              </div>
+
+              <!-- Column 3: Aggressive Investor -->
+              <div class="col">
+                <div class="strategy-box">
+              
+                  <!-- Side-by-side HIGH RISK and indicators -->
+                  <div class="badge risk-row align-items-center mb-3" style="background-color: #FFD3D3;">
+                    <p class="text-dark mb-0">High Risk</p>
+                    <div class="risk-level-indicator short-term">
+                      <div class="risk-box risk-box-sm filled start red"></div>
+                      <div class="risk-box risk-box-sm filled middle red"></div>
+                      <div class="risk-box risk-box-sm filled end red"></div>
+                    </div>
+                  </div>
+              
+                  <h6 class="fw-bold">Aggressive Investor</h6>
+              
+                  <div class="details-seciton">
+                    <div class="strategy-pair"><span>Monthly Saving:</span><span>RM 2,100</span></div>
+                    <div class="strategy-pair"><span>Expected Return:</span><span>~ 8–10%</span></div>
+                    <div class="strategy-pair"><span>Estimated Total:</span><span>~ RM 240,000</span></div>
+                    <div class="strategy-pair"><span>Duration:</span><span>5 years</span></div>
+                  </div>
+              
+                  <div class="allocation-section text-start">
+                    <p class="section-heading mb-1">Allocation:</p>
+                    <div class="section-content mb-2">
+                      <li>60% Stocks / ETFs</li>
+                      <li>30% Mutual Funds</li>
+                      <li>10% Crypto (optional)</li>
+                    </div>
+                  </div>
+              
+                  <div class="avoid-section">
+                    <p class="avoid-label section-heading text-start mb-0">Avoid:</p>
+                    <p class="avoid-content section-content text-start mb-2">Overexposure to volatile assets.</p>
+                  </div>
+              
+                  <p class="description-text">Ideal for risk-takers. May exceed target, but with volatility.</p>
+              
+                  <button class="custom-button custom-button-outline">Change Strategy 🔁</button>
+                </div>
+              </div>
+              
+    
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
 </body>
 </html>
