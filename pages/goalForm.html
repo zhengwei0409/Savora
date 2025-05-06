@@ -17,6 +17,21 @@
 
 </head>
 <body>
+    <!-- Profile Completion Modal -->
+    <div class="modal fade" id="profileCompletionModal" tabindex="-1" aria-labelledby="profileCompletionModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered custom-modal">
+            <div class="modal-content shadow-lg">
+                <div class="modal-body text-center p-4">
+                    <div class="mb-1">
+                        <span class="bi bi-exclamation-circle-fill text-danger" style="font-size: 4.5rem;"></span>
+                    </div>
+                    <p>Please complete your profile first <br> before setting your financial goal.</p>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="header">
         <header>
             <div class="header-div">
@@ -108,7 +123,7 @@
                     <label for="goalCategory" class="form-label fw-medium">Goal Category</label>
                     <select class="form-select" id="goalCategory" required>
                         <option selected disabled>Choose category</option>
-                        <option>Lifestyle</option>
+                        <option>Major Purchase</option>
                         <option>Education</option>
                         <option>Family</option>
                         <option>Travel</option>

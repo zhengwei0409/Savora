@@ -42,7 +42,7 @@ img.img-fluid {
     }
   }
 
-  .custom-radio-box {
+.custom-radio-box {
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -138,4 +138,30 @@ h2 {
 
 .form-check-label {
     font-size: 14px;
+}
+
+#profileCompletionModal .modal-content {
+    border-radius: 20px;
+    border: none;
+}
+
+.custom-modal {
+    max-width: 500px;
+    width: 90%;
+}
+
+#profileCompletionModal .btn-primary {
+    background-color: #303E7B;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 15px;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+
+#profileCompletionModal p {
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
 }
