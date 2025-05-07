@@ -18,8 +18,8 @@
 
     <link href="/css/navbar.css" rel="stylesheet">
     <link href="/css/goals.css" rel="stylesheet">
-    <link href="../css/footer.css" rel="stylesheet">
-    <link href="../css/goalDetails.css" rel="stylesheet">
+    <link href="/../css/footer.css" rel="stylesheet">
+    <link href="/../css/goalDetails.css" rel="stylesheet">
 
 </head>
 
@@ -55,10 +55,10 @@
                     <h1 class="display-5">My Investment Goals</h1>
                 </div>
                 <div class="col-6 d-flex justify-content-end"> <!-- Right-aligned buttons -->
-                    <button class="btn custom-expense-button btn-spacing">
+                    <button class="btn custom-expense-button btn-spacing"onclick="window.location.href='goalForm.html'">
                         Add Expense <i class="bi bi-plus-circle ms-1"></i>
                     </button>
-                    <button class="btn btn-danger btn-remind">
+                    <button class="btn btn-danger btn-remind"data-bs-toggle="modal" data-bs-target="#reminderModal">
                         Remind me <i class="bi bi-bell ms-1"></i>
                       </button>
                 </div>
@@ -79,6 +79,220 @@
                     <div class="risk-box end"></div>
                   </div>
                   <div class="goal-count">2</div>
+                </div>
+                
+
+                <div class="custom-goal-card mb-2">
+                  <div class="card-header">
+                    <div>
+                      <h5 class="goal-title">Buy Toyota Camry</h5>
+                      <p class="goal-subtext">3 years 0 months<br>(11 months remaining)</p>
+                    </div>
+                    <div class="target-amount">
+                      <span class="label">Target Amount:</span>
+                      <h5>RM 40,000</h5>
+                    </div>
+                  </div>
+                
+                  <div class="card-body">
+                    <div class="savings-status">
+                      <span>Amount saved this month</span>
+                      <span><strong>RM 3200 / RM 3200</strong> ✅</span>
+                    </div>
+                
+                    <div class="progress-section">
+                      <label>Progress</label>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 63%;"></div>
+                      </div>
+                      <small class="progress-info">63% saved ( RM 25,200 / RM 40,000 )</small>
+                    </div>
+                
+                    <div class="card-actions">
+                      <div class="action-group">
+                        <button class="btn-secondary"  data-bs-toggle="modal" data-bs-target="#strategyModal"><i class="bi bi-book"></i> View Strategy</button>
+                        <button class="btn-success"data-bs-toggle="modal" data-bs-target="#addSavingsModal"><i class="bi bi-cash-coin"></i> Add Savings</button>
+                      </div>
+
+                      <div class="dropdown">
+                        <button class="btn-options" data-bs-toggle="dropdown">
+                          <i class="bi bi-three-dots-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#goalDetailsModal">View</a></li>
+                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#editGoalModal">Edit</a></li>
+                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteGoalModal">Delete</a></li>
+                        </ul>
+                      </div>
+                    </div>                   
+                  </div>
+                </div>
+                
+                <div class="custom-goal-card mb-2" data-bs-toggle="modal" data-bs-target="#goalDetailsModal" role="button" tabindex="0">
+                  <div class="card-header">
+                    <div>
+                      <h5 class="goal-title">Buy Toyota Camry</h5>
+                      <p class="goal-subtext">3 years 0 months<br>(11 months remaining)</p>
+                    </div>
+                    <div class="target-amount">
+                      <span class="label">Target Amount:</span>
+                      <h5>RM 40,000</h5>
+                    </div>
+                  </div>
+                
+                  <div class="card-body">
+                    <div class="savings-status">
+                      <span>Amount saved this month</span>
+                      <span><strong>RM 3200 / RM 3200</strong> ✅</span>
+                    </div>
+                
+                    <div class="progress-section">
+                      <label>Progress</label>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 63%;"></div>
+                      </div>
+                      <small class="progress-info">63% saved ( RM 25,200 / RM 40,000 )</small>
+                    </div>
+                
+                    <div class="card-actions">
+                      <div class="action-group">
+                        <button class="btn-secondary"  data-bs-toggle="modal" data-bs-target="#strategyModal"><i class="bi bi-book"></i> View Strategy</button>
+                        <button class="btn-success"data-bs-toggle="modal" data-bs-target="#addSavingsModal"><i class="bi bi-cash-coin"></i> Add Savings</button>
+                      </div>
+
+                      <div class="dropdown">
+                        <button class="btn-options" data-bs-toggle="dropdown">
+                          <i class="bi bi-three-dots-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#editGoalModal">Edit</a></li>
+                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteGoalModal">Delete</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- More cards -->
+              </div>
+          
+              <div class="col goal-column overflow-auto" style="height: 100%;">
+                <div>
+                  <div class="term-row">
+                    <h5 class="term-label">Medium Term</h5>
+                    <div class="risk-level-indicator medium-term">
+                      <div class="risk-box filled start orange"></div>
+                      <div class="risk-box filled middle orange"></div>
+                      <div class="risk-box end"></div>
+                    </div>
+                    <div class="goal-count">2</div>
+                  </div>
+                </div>
+                <div class="custom-goal-card mb-2" data-bs-toggle="modal" data-bs-target="#goalDetailsModal" role="button" tabindex="0">
+                  <div class="card-header">
+                    <div>
+                      <h5 class="goal-title">Buy Toyota Camry</h5>
+                      <p class="goal-subtext">3 years 0 months<br>(11 months remaining)</p>
+                    </div>
+                    <div class="target-amount">
+                      <span class="label">Target Amount:</span>
+                      <h5>RM 40,000</h5>
+                    </div>
+                  </div>
+                
+                  <div class="card-body">
+                    <div class="savings-status">
+                      <span>Amount saved this month</span>
+                      <span><strong>RM 3200 / RM 3200</strong> ✅</span>
+                    </div>
+                
+                    <div class="progress-section">
+                      <label>Progress</label>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 63%;"></div>
+                      </div>
+                      <small class="progress-info">63% saved ( RM 25,200 / RM 40,000 )</small>
+                    </div>
+                
+                    <div class="card-actions">
+                      <div class="action-group">
+                        <button class="btn-secondary"  data-bs-toggle="modal" data-bs-target="#strategyModal"><i class="bi bi-book"></i> View Strategy</button>
+                        <button class="btn-success"data-bs-toggle="modal" data-bs-target="#addSavingsModal"><i class="bi bi-cash-coin"></i> Add Savings</button>
+                      </div>
+
+                      <div class="dropdown">
+                        <button class="btn-options" data-bs-toggle="dropdown">
+                          <i class="bi bi-three-dots-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#editGoalModal">Edit</a></li>
+                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteGoalModal">Delete</a></li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="custom-goal-card mb-2" data-bs-toggle="modal" data-bs-target="#goalDetailsModal" role="button" tabindex="0">
+                  <div class="card-header">
+                    <div>
+                      <h5 class="goal-title">Buy Toyota Camry</h5>
+                      <p class="goal-subtext">3 years 0 months<br>(11 months remaining)</p>
+                    </div>
+                    <div class="target-amount">
+                      <span class="label">Target Amount:</span>
+                      <h5>RM 40,000</h5>
+                    </div>
+                  </div>
+                
+                  <div class="card-body">
+                    <div class="savings-status">
+                      <span>Amount saved this month</span>
+                      <span><strong>RM 3200 / RM 3200</strong> ✅</span>
+                    </div>
+                
+                    <div class="progress-section">
+                      <label>Progress</label>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 63%;"></div>
+                      </div>
+                      <small class="progress-info">63% saved ( RM 25,200 / RM 40,000 )</small>
+                    </div>
+                
+                    <div class="card-actions">
+                      <div class="action-group">
+                        <button class="btn-secondary"  data-bs-toggle="modal" data-bs-target="#strategyModal"><i class="bi bi-book"></i> View Strategy</button>
+                        <button class="btn-success"data-bs-toggle="modal" data-bs-target="#addSavingsModal"><i class="bi bi-cash-coin"></i> Add Savings</button>
+                      </div>
+
+                      <div class="dropdown">
+                        <button class="btn-options" data-bs-toggle="dropdown">
+                          <i class="bi bi-three-dots-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#editGoalModal">Edit</a></li>
+                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteGoalModal">Delete</a></li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- More cards -->
+              </div>
+          
+              <div class="col goal-column last-column overflow-auto" style="height: 100%;">
+                <div>
+                  <div class="term-row">
+                    <h5 class="term-label">Long Term</h5>
+                    <div class="risk-level-indicator long-term">
+                      <div class="risk-box filled start red"></div>
+                      <div class="risk-box filled middle red"></div>
+                      <div class="risk-box filled end red"></div>
+                    </div>
+                    <div class="goal-count">1</div>
+                  </div>
                 </div>
                 
 
@@ -111,184 +325,19 @@
                     <div class="card-actions">
                       <div class="action-group">
                         <button class="btn-secondary"  data-bs-toggle="modal" data-bs-target="#strategyModal"><i class="bi bi-book"></i> View Strategy</button>
-                        <button class="btn-success"><i class="bi bi-cash-coin"></i> Add Savings</button>
+                        <button class="btn-success"data-bs-toggle="modal" data-bs-target="#addSavingsModal"><i class="bi bi-cash-coin"></i> Add Savings</button>
                       </div>
-                      <button class="btn-options"><i class="bi bi-three-dots-vertical"></i></button>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="custom-goal-card mb-2">
-                  <div class="card-header">
-                    <div>
-                      <h5 class="goal-title">Buy Toyota Camry</h5>
-                      <p class="goal-subtext">3 years 0 months<br>(11 months remaining)</p>
-                    </div>
-                    <div class="target-amount">
-                      <span class="label">Target Amount:</span>
-                      <h5>RM 40,000</h5>
-                    </div>
-                  </div>
-                
-                  <div class="card-body">
-                    <div class="savings-status">
-                      <span>Amount saved this month</span>
-                      <span><strong>RM 3200 / RM 3200</strong> ✅</span>
-                    </div>
-                
-                    <div class="progress-section">
-                      <label>Progress</label>
-                      <div class="progress-bar">
-                        <div class="progress-fill" style="width: 63%;"></div>
-                      </div>
-                      <small class="progress-info">63% saved ( RM 25,200 / RM 40,000 )</small>
-                    </div>
-                
-                    <div class="card-actions">
-                      <div class="action-group">
-                        <button class="btn-secondary"  data-bs-toggle="modal" data-bs-target="#strategyModal"><i class="bi bi-book"></i> View Strategy</button>
-                        <button class="btn-success"><i class="bi bi-cash-coin"></i> Add Savings</button>
-                      </div>
-                      <button class="btn-options"><i class="bi bi-three-dots-vertical"></i></button>
-                    </div>
-                  </div>
-                </div>
-                
-                <!-- More cards -->
-              </div>
-          
-              <div class="col goal-column overflow-auto" style="height: 100%;">
-                <div>
-                  <div class="term-row">
-                    <h5 class="term-label">Medium Term</h5>
-                    <div class="risk-level-indicator medium-term">
-                      <div class="risk-box filled start orange"></div>
-                      <div class="risk-box filled middle orange"></div>
-                      <div class="risk-box end"></div>
-                    </div>
-                    <div class="goal-count">2</div>
-                  </div>
-                </div>
-                <div class="custom-goal-card mb-2">
-                  <div class="card-header">
-                    <div>
-                      <h5 class="goal-title">Buy Toyota Camry</h5>
-                      <p class="goal-subtext">3 years 0 months<br>(11 months remaining)</p>
-                    </div>
-                    <div class="target-amount">
-                      <span class="label">Target Amount:</span>
-                      <h5>RM 40,000</h5>
-                    </div>
-                  </div>
-                
-                  <div class="card-body">
-                    <div class="savings-status">
-                      <span>Amount saved this month</span>
-                      <span><strong>RM 3200 / RM 3200</strong> ✅</span>
-                    </div>
-                
-                    <div class="progress-section">
-                      <label>Progress</label>
-                      <div class="progress-bar">
-                        <div class="progress-fill" style="width: 63%;"></div>
-                      </div>
-                      <small class="progress-info">63% saved ( RM 25,200 / RM 40,000 )</small>
-                    </div>
-                
-                    <div class="card-actions">
-                      <div class="action-group">
-                        <button class="btn-secondary"  data-bs-toggle="modal" data-bs-target="#strategyModal"><i class="bi bi-book"></i> View Strategy</button>
-                        <button class="btn-success"><i class="bi bi-cash-coin"></i> Add Savings</button>
-                      </div>
-                      <button class="btn-options"><i class="bi bi-three-dots-vertical"></i></button>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="custom-goal-card mb-2">
-                  <div class="card-header">
-                    <div>
-                      <h5 class="goal-title">Buy Toyota Camry</h5>
-                      <p class="goal-subtext">3 years 0 months<br>(11 months remaining)</p>
-                    </div>
-                    <div class="target-amount">
-                      <span class="label">Target Amount:</span>
-                      <h5>RM 40,000</h5>
-                    </div>
-                  </div>
-                
-                  <div class="card-body">
-                    <div class="savings-status">
-                      <span>Amount saved this month</span>
-                      <span><strong>RM 3200 / RM 3200</strong> ✅</span>
-                    </div>
-                
-                    <div class="progress-section">
-                      <label>Progress</label>
-                      <div class="progress-bar">
-                        <div class="progress-fill" style="width: 63%;"></div>
+                      <div class="dropdown">
+                        <button class="btn-options" data-bs-toggle="dropdown">
+                          <i class="bi bi-three-dots-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#editGoalModal">Edit</a></li>
+                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteGoalModal">Delete</a></li>
+                        </ul>
                       </div>
-                      <small class="progress-info">63% saved ( RM 25,200 / RM 40,000 )</small>
-                    </div>
-                
-                    <div class="card-actions">
-                      <div class="action-group">
-                        <button class="btn-secondary"  data-bs-toggle="modal" data-bs-target="#strategyModal"><i class="bi bi-book"></i> View Strategy</button>
-                        <button class="btn-success"><i class="bi bi-cash-coin"></i> Add Savings</button>
-                      </div>
-                      <button class="btn-options"><i class="bi bi-three-dots-vertical"></i></button>
-                    </div>
-                  </div>
-                </div>
-                <!-- More cards -->
-              </div>
-          
-              <div class="col goal-column last-column overflow-auto" style="height: 100%;">
-                <div>
-                  <div class="term-row">
-                    <h5 class="term-label">Long Term</h5>
-                    <div class="risk-level-indicator long-term">
-                      <div class="risk-box filled start red"></div>
-                      <div class="risk-box filled middle red"></div>
-                      <div class="risk-box filled end red"></div>
-                    </div>
-                    <div class="goal-count">1</div>
-                  </div>
-                </div>
-                
 
-                <div class="custom-goal-card mb-2">
-                  <div class="card-header">
-                    <div>
-                      <h5 class="goal-title">Buy Toyota Camry</h5>
-                      <p class="goal-subtext">3 years 0 months<br>(11 months remaining)</p>
-                    </div>
-                    <div class="target-amount">
-                      <span class="label">Target Amount:</span>
-                      <h5>RM 40,000</h5>
-                    </div>
-                  </div>
-                
-                  <div class="card-body">
-                    <div class="savings-status">
-                      <span>Amount saved this month</span>
-                      <span><strong>RM 3200 / RM 3200</strong> ✅</span>
-                    </div>
-                
-                    <div class="progress-section">
-                      <label>Progress</label>
-                      <div class="progress-bar">
-                        <div class="progress-fill" style="width: 63%;"></div>
-                      </div>
-                      <small class="progress-info">63% saved ( RM 25,200 / RM 40,000 )</small>
-                    </div>
-                
-                    <div class="card-actions">
-                      <div class="action-group">
-                        <button class="btn-secondary"  data-bs-toggle="modal" data-bs-target="#strategyModal"><i class="bi bi-book"></i> View Strategy</button>
-                        <button class="btn-success"><i class="bi bi-cash-coin"></i> Add Savings</button>
-                      </div>
-                      <button class="btn-options"><i class="bi bi-three-dots-vertical"></i></button>
                     </div>
                   </div>
                 </div>
@@ -299,10 +348,10 @@
           
     </main>
 
-  <!-- Modal- Goal Details -->
-  <div class="modal fade" id="goalDetailsModal" tabindex="-1" aria-hidden="true">
+    <!-- Modal- Goal Details -->
+    <div class="modal fade" id="goalDetailsModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content" style="border-radius: 12px;">
+      <div class="modal-content custom-bordered-modal">
           <div class="modal-header border-0 pb-0">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
@@ -360,30 +409,31 @@
                               </div>
                           </div>
                           <div class="progress-container">
-                              <div class="savings-progress">
+                              <div class="savings-progress mb-3">
                                   <div class="progress-info">
                                       <span class="saved-percentage">63% Saved</span>
                                   </div>
-                                  <div class="progress" style="height: 8px; background: #E2E7FA; border-radius: 4px;">
-                                      <div class="progress-bar" role="progressbar" style="width: 63%; background: #555FBB;" 
-                                           aria-valuenow="63" aria-valuemin="0" aria-valuemax="100"></div>
+                                  <div class="progress">
+                                      <div class="progress-bar" role="progressbar" style="width: 63%; background: #555FBB;"
+                                      aria-valuenow="63" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   <span class="savings-ratio">RM 25,200 / RM 40,000</span>
                               </div>
                           </div>
                       </div>
-                      
+                  </div>
+                  <div class="savings-chart-container">
+                      <p class="chart-title">Savings History</p>
+                      <canvas id="savingsHistoryChart" width="400" height="150"></canvas>
                   </div>
               </div>
-          
-
           </div>
               
               <div class="goal-actions">
-                  <button class="btn-strategy">
+                  <button class="btn-strategy" data-bs-toggle="modal" data-bs-target="#strategyModal">
                       <img src="../assets/images/view-strategy-icon.png" alt="icon" class="btn-view-icon" />
                       View Strategy</button>
-                  <button class="btn-add">
+                  <button class="btn-add" data-bs-toggle="modal" data-bs-target="#addSavingsModal">
                       <img src="../assets/images/add-savings-icon.png" alt="icon" class="btn-add-icon" />
                       Add Savings</button>
               </div>
@@ -393,6 +443,8 @@
       </div>
   </div> 
 
+   
+    <!-- Strategy Modal -->
     <div class="modal fade" id="strategyModal" tabindex="-1" aria-labelledby="strategyModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content custom-modal">
@@ -558,14 +610,200 @@
                 </div>
               </div>
               
-    
             </div>
           </div>
     
         </div>
       </div>
     </div>
+
+    <!-- Add Savings Modal -->
+    <div class="modal fade" id="addSavingsModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content custom-bordered-modal">
+          <div class="modal-header border-0 pb-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          <div class="savings-form-container">
+              <h4 class="savings-title">Savings</h4>
+              <p class="savings-subtitle">Enter the amount of money you want to save.</p>
+              
+              <form id="savingsForm" class="d-flex flex-column align-items-center">
+                  <div class="savings-input-container mb-4">
+                      <span class="currency-prefix">RM</span>
+                      <input type="number" 
+                          class="savings-input" 
+                          placeholder="0.00" 
+                          required
+                          step="0.01"
+                          min="0">
+                  </div>
+                  <button type="submit" class="btn-save">Save</button>
+              </form>
+          </div>
+          </div>
+      </div>
+      </div>
+    </div>
+
+
+    <!-- Delete Goal Confirmation Modal -->
+    <div class="modal fade" id="deleteGoalModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content custom-bordered-modal">
+              <div class="modal-header border-0 pb-0">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center pb-4">
+                  <div class="delete-confirmation-container">
+                      <h4 class="delete-title">Delete Goal</h4>
+                      <p class="delete-message">Are you sure you want to delete the goal?</p>
+                      
+                      <div class="d-flex justify-content-center gap-3">
+                          <button type="button" class="btn-confirm-delete">Yes</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <!-- Reminder Confirmation Modal -->
+    <div class="modal fade" id="reminderModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content custom-bordered-modal">
+              <div class="modal-header border-0 pb-0">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center pb-4">
+                  <div class="reminder-container">
+                      <p class="reminder-message">Would you like to receive monthly email reminders to update your progress?</p>
+                      <button type="button" class="btn-remind-me" id="confirmReminder">
+                          Yes, remind me monthly
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+  <!-- Reminder Success Modal -->
+  <div class="modal fade" id="reminderSuccessModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content custom-bordered-modal">
+              <div class="modal-header border-0 pb-0">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center pb-4">
+                  <div class="success-container">
+                      <div class="success-icon mb-4">
+                          <img src="../assets/images/reminder.png" alt="Success" width="60">
+                      </div>  
+                      <p class="success-message">Done! You'll receive monthly reminders via email.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <!-- Edit Goal Modal -->
+  <div class="modal fade edit-goal-modal" id="editGoalModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title w-100 text-center">Edit Goal Details</h5>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <!-- Goal Name -->
+                    <div class="mb-3">
+                        <label for="editGoalName" class="form-label fw-bold small-label">Goal Name</label>
+                        <input type="text" class="form-control" id="editGoalName" value="Buy Toyota Camry" required>
+                    </div>
+                    
+                    <!-- Type of Goal -->
+                    <div class="mb-3">
+                        <label class="form-label fw-bold small-label">Type of goal</label>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <label class="custom-radio-box">
+                                <span>Short term</span>
+                                <input type="radio" name="editGoalType" id="editShortTerm">
+                            </label>
+                            <label class="custom-radio-box">
+                                <span>Medium term</span>
+                                <input type="radio" name="editGoalType" id="editMediumTerm" checked>
+                            </label>
+                            <label class="custom-radio-box">
+                                <span>Long term</span>
+                                <input type="radio" name="editGoalType" id="editLongTerm">
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Goal Priority -->
+                    <div class="mb-3">
+                        <label class="form-label fw-bold small-label">Goal Priority</label>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <label class="custom-radio-box">
+                                <span>Low priority</span>
+                                <input type="radio" name="editGoalPriority" id="editLowPriority">
+                            </label>
+                            <label class="custom-radio-box">
+                                <span>Medium priority</span>
+                                <input type="radio" name="editGoalPriority" id="editMediumPriority">
+                            </label>
+                            <label class="custom-radio-box">
+                                <span>High priority</span>
+                                <input type="radio" name="editGoalPriority" id="editHighPriority" checked>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Saving Duration -->
+                    <div class="mb-3">
+                        <label for="editDuration" class="form-label fw-bold small-label">Saving Duration</label>
+                        <input type="date" class="form-control" id="editDuration" value="2025-12-31" required>
+                        <div class="form-text" id="editDurationDisplay">Duration: 1 year 8 months</div>
+                    </div>
+                    
+                    <!-- Goal Category -->
+                    <div class="mb-3">
+                        <label for="editGoalCategory" class="form-label fw-bold small-label">Goal Category</label>
+                        <select class="form-select" id="editGoalCategory" required>
+                            <option value="Major Purchase" selected>Major Purchase</option>
+                            <option value="Education">Education</option>
+                            <option value="Family">Family</option>
+                            <option value="Travel">Travel</option>
+                            <option value="Investment">Investment</option>
+                            <option>Personal Goal</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Target Amount -->
+                    <div class="mb-3">
+                        <label for="editTargetAmount" class="form-label fw-bold small-label">Target Amount</label>
+                        <input type="text" class="form-control" id="editTargetAmount" value="RM 40,000" required>
+                    </div>
+                    
+                    <!-- Buttons -->
+                    <div class="button-container">
+                        <button type="button" class="btn-cancel" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn-submit">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+
     
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/goalDetails.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
 </body>

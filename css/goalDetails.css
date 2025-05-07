@@ -4,7 +4,7 @@ body {
 
 /* Goal-Details Modal */
 .goal-card {
-    width: 300px;
+    width: 320px;
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -13,16 +13,22 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+#goalDetailsModal {
+    z-index: 1060 !important; 
+}
 
 .custom-bordered-modal{
-    border: 5px solid #A9B5DF;
+    border: 6px solid #A9B5DF;
     border-radius: 12px;
 }
 
 .modal-header {
-    padding: 0;
-    margin: 0;
-    padding-top: 0;
+    padding: 1rem 1rem 0 1rem !important; 
+}
+
+.modal-body {
+    padding-left: 1.5rem;  
+    padding-right: 1.5rem;  
 }
 
 .goal-header {
@@ -51,7 +57,9 @@ body {
     margin-top: 5px;
     display: flex;
     justify-content: flex-start; 
-    gap: 150px;
+    gap: 128px;
+    flex-wrap: nowrap; 
+    white-space: nowrap;
 }
 
 .target-amount-container {
@@ -72,9 +80,11 @@ body {
 }
 
 .goal-title{
-    font-weight: 600;
+    font-weight: 700;
     color: #303E7B;
     margin: 0;
+    font-size: 22px;
+    line-height: 1.2;
 }
 
 .goal-icon {
@@ -242,8 +252,24 @@ body {
     width: 250px;
     text-align: right;
     align-items: flex-end;
-    gap: 20px;
+    gap: 17px;
     margin-top: -30px;
+}
+
+.progress {
+    height: 8px; 
+    background: #E2E7FA;
+    border-radius: 4px;
+    position: relative;
+}
+  
+.progress-bar {
+    background: #555FBB;
+    border-radius: 4px;
+    height: 100%; 
+    display: block; 
+    margin-top: 0px;
+
 }
 
 .progress-info {
@@ -270,17 +296,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-}
-
-.progress {
-    height: 8px;
-    background: #E0E0E0;
-    border-radius: 4px;
-}
-
-.progress-bar {
-    background: #303E7B;
-    border-radius: 4px;
 }
 
 .card-footer {
@@ -315,6 +330,8 @@ body {
     display: flex;
     justify-content: center;
     gap: 50px; 
+    margin-top: 1.5rem;
+    padding: 0 1rem 1rem 1rem;
 }
 
 .btn-strategy {
@@ -497,8 +514,16 @@ body {
 /* Edit Goal Modal */
 .edit-goal-modal .modal-content {
     border-radius: 12px;
-    background-color: #A9B5DF;
+    background-color: #A9B5DF !important;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.edit-goal-modal .modal-body {
+    background-color: transparent !important;
+}
+
+.edit-goal-modal form {
+    background-color: transparent !important;
 }
 
 .edit-goal-modal .modal-dialog {
@@ -515,13 +540,12 @@ body {
 .edit-goal-modal .modal-title {
     font-weight: 700;
     color: #2D336B;
-    font-size: 28px;
+    font-size: 30px;
     text-align: center;
+    padding-bottom: 1rem;
 }
 
 .edit-goal-modal .form-label {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
     font-size: 22px;
     color: #303E7B;
 }
@@ -571,6 +595,7 @@ body {
     justify-content: space-between;
     margin: 30px auto 0;
     max-width: 500px;
+    padding: 0 1rem 1rem 1rem;
 }
 
 .edit-goal-modal .btn-cancel {
