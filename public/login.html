@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savora - Login</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Link the font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link href="../css/login.css" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    
+</head>
+<body>
+
+        <div class="header">
+            <header>
+                <div class="header-div">
+                    <div>
+                        <a href="../public/index.html"><img src="../assets/images/savora-logo.png" class="logo"></a>
+                        <div class="nav-bar">
+                            <nav>
+                                <a href="../public/index.html" class="">Home</a>
+                                <a href="../public/about.html" class="">About Us</a>
+                                <a href="../public/help.html" class="">Help</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="sbtn-outline">Sign up/Log in</button>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+<main>
+    <!-- Login Container -->
+    <div class="login-container">
+        <!-- Login Form -->
+        <div class="login-form">
+            <h1 class="login-heading">LOGIN</h1>
+            
+            <form>
+                <div class="input-icon mb-3">
+                    <i class="fas fa-user"></i>
+                    <input type="text" class="form-control" placeholder="Username">
+                </div>
+                
+                <div class="input-icon mb-2">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                    <span class="password-toggle" onclick="togglePassword()">
+                        <i class="fas fa-eye" id="toggleIcon"></i>
+                    </span>
+                </div>
+                
+                <div class="forgot-password">
+                    <a href="#">Forgot Password</a>
+                </div>
+                
+                <div class="button-container">
+                    <button type="submit" class="login-btn">Login Now</button>
+                </div>
+            </form>
+            
+            <div class="divider">Login with Others</div>
+            
+            <button class="google-btn">
+                <img src="https://cdn.cdnlogo.com/logos/g/35/google-icon.svg" alt="Google" width="18" height="18">
+                Login with Google
+            </button>
+            
+            <div class="signup-link">
+                <br>Don't have an account? <a href="#">Sign Up</a>
+            </div>
+        </div>
+        
+        <!-- Login Info -->
+        <div class="login-info">
+            <div class="logo-container">
+                <img src="../assets/images/savora-logo-no-text.png" alt="Savora Logo" class="logo-white">
+            </div>
+            <h2 class="welcome-heading"><br>Welcome to Savora<br></h2>
+            
+            <p class="welcome-text">
+                Savora is your smart companion for financial planning—designed to help financial planners streamline workflows, manage clients efficiently, and make informed decisions with ease
+            </p>
+        </div>
+    </div>
+</main>
+
+<div class="footer">
+    <footer>
+        <div class="footer-1">
+            <!-- Change the path according to your location -->
+            <a href="#"><img src="../assets/images/savora-logo.png" class="logo"></a>
+        </div>
+        <div class="footer-2">
+            <div>
+                <div class="title-small">Customer Service</div>
+                <div class="footer-contact-text">+60 488 6969</div>
+                <div class="footer-text">Mon-Fri, 8:30 - 16:30 MYT</div>
+                <button class="sbtn-outline">Online Inquiry</button>
+                <div class="footer-contact-text-email">cs@my.savora.com</div>
+            </div>
+            <div>
+                <div class="title-small">About Savora</div>
+                <a href="#"><div class="footer-text">About Savora</div></a>
+                <a href="#"><div class="footer-text">Newsroom</div></a>
+            </div>
+            <div>
+                <div class="title-small">Terms & Conditions</div>
+                <a href="#"><div class="footer-text">Terms of Use</div></a>
+                <a href="#"><div class="footer-text">Privacy Policy</div></a>
+                <a href="#"><div class="footer-text">Terms and Agreements</div></a>
+            </div>
+            <div>
+                <div>
+                    <div class="title-small">Careers / Contact:</div>
+                    <a href="#"><div class="footer-text">Apply Now</div></a>
+                    <div class="footer-text">hr@my.savora.com</div>
+                </div>
+                <div class="footer2-col3-social">
+                    <div class="title-small">Follow us on</div>
+                    <a href="#"><span class="bi bi-facebook"></span></a>
+                    <a href="#"><span class="bi bi-instagram"></span></a>
+                    <a href="#"><span class="bi bi-linkedin"></span></a>
+                    <br>
+                    <a href="#"><span class="bi bi-twitter-x"></span></a>
+                    <a href="#"><span class="bi bi-telegram"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-3">
+            <div class="footer-text">Investment Disclaimer   Investing involves risk, and past performance does not guarantee future results. Always conduct thorough research and consult with financial professionals before making any investment decisions. Your financial goals and risk tolerance should guide your choices.</div>
+            <div class="footer-text">Copyright © 2025 Savora Technologies Inc. All Rights Reserved.</div>
+        </div>
+    </footer>
+</div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/login.js"></script>
+</body>
+</html>
