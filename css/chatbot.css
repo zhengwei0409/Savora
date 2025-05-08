@@ -79,6 +79,11 @@ body {
     flex-direction: column;
 }
 
+.chat-input:focus {
+    outline: none;
+    border: 1px solid var(--primary-dark-blue);
+}
+
 .send-button {
     position: absolute;
     right: 15px;
@@ -118,6 +123,35 @@ body {
 
 .logo-white {
     max-width: 70px;
+}
+
+.chat-footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.clear-chat-btn {
+    background-color: white;
+    color: var(--primary-dark-blue);
+    border: 1px solid var(--primary-dark-blue);
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.clear-chat-btn:hover {
+    background-color: var(--primary-dark-blue);
+    color: white;
+}
+
+.clear-chat-btn i {
+    font-size: 16px;
 }
 
 /* Typing indicator animation */

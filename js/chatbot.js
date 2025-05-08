@@ -90,3 +90,35 @@ function removeTypingIndicator() {
         typingIndicator.remove();
     }
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const clearChatButton = document.getElementById('clear-chat');
+    
+    clearChatButton.addEventListener('click', function() {
+        // Clear chat messages
+        const chatMessages = document.getElementById('chat-messages');
+        
+        // Remove all messages but keep the intro
+        while (chatMessages.firstChild) {
+            chatMessages.removeChild(chatMessages.firstChild);
+        }
+        
+        // Re-add the bot intro
+        const botIntro = document.createElement('div');
+        botIntro.className = 'bot-intro';
+        botIntro.id = 'bot-intro';
+        botIntro.innerHTML = `
+            <div class="logo-container">
+                <img src="../assets/images/savora-logo-no-text.png" alt="Savora Logo" class="logo-white">
+            </div>
+            <h1>How can we assist you today?</h1>
+            <p><br>I am your AI Personal Financial Assistant - Sori.<br>Ask me anything about financial planning and investment topics!</p>
+        `;
+        
+        chatMessages.appendChild(botIntro);
+        
+        // Clear any chat history stored in localStorage if you're using it
+        localStorage.removeItem('chatHistory');
+    });
+});
