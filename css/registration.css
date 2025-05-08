@@ -76,6 +76,8 @@ body {
 .form-control:focus {
     box-shadow: none;
     outline: none;
+    border: 2px solid #A5B4FA; /* Light blue border when focused */
+    background-color: var(--white-color); /* Change background to white when focused */
 }
 
 /* Icon styles */
@@ -89,7 +91,7 @@ body {
 
 .btn-toggle-password {
     position: absolute;
-    right: 12px;
+    right: 20px;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -148,6 +150,7 @@ body {
     font-size: 0.75rem;
     margin-top: 3px;
     height: 16px;
+    margin-left: 15px;
 }
 
 .feedback.valid-feedback {

@@ -117,11 +117,12 @@ document.addEventListener('DOMContentLoaded', function() {
         // Toggle between eye and eye-slash icons
         const icon = button.querySelector('i');
         if (type === 'text') {
-            icon.classList.remove('fa-eye');
-            icon.classList.add('fa-eye-slash');
-        } else {
+
             icon.classList.remove('fa-eye-slash');
             icon.classList.add('fa-eye');
+        } else {
+            icon.classList.remove('fa-eye');
+            icon.classList.add('fa-eye-slash');
         }
     }
 
