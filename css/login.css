@@ -16,7 +16,7 @@ body {
     max-width: 900px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    overflow: hidden;
+    overflow: visible;
     margin: auto; /* Center the login container */
     margin-top: 50px; /* Space for navbar */
     margin-bottom: 50px;
@@ -25,23 +25,32 @@ body {
 .login-form {
     background-color: white;
     padding: 2.5rem 3rem;
-    width: 50%; /* Back to 50% */
+    width: 50%;
     display: flex;
     flex-direction: column;
+    border-radius: 1rem;
 }
 
 .login-info {
     background-color: var(--dark-blue);
     color: white;
     padding: 4rem 3rem;
-    width: 50%; /* Back to 50% */
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    /* Increase overall size of the panel */
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    min-height: 500px; /* Set minimum height */
+    transform: scale(1.05); /* Make it slightly larger */
+    transform-origin: center;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    margin-right: -15px; /* Extend slightly outside the card */
 }
 
 .login-heading {
