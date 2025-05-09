@@ -1,25 +1,13 @@
 {
   "name": "savora",
   "version": "1.0.0",
-  "description": "Team 04, Semester 2 2024/2025, Web Programming Project - Financial Goal Planning System # Savora A web-based platform designed to help users manage and achieve their financial goals through strategic planning, market insights, and educational tools.",
-  "main": "index.js",
+  "description": "Web frontend for Savora",
   "scripts": {
-    "start": "node backend/server.js",
-    "dev": "nodemon backend/server.js"
+    "start": "cd backend && npm start",
+    "dev": "cd backend && npm run dev"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@google/genai": "^0.12.0",
     "bootstrap": "^5.3.5",
-    "bootstrap-icons": "^1.11.3",
-    "cors": "^2.8.5",
-    "dotenv": "^16.5.0",
-    "express": "^5.1.0",
-    "finnhub": "^1.2.19",
-    "mongoose": "^8.14.1"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.10"
+    "bootstrap-icons": "^1.11.3"
   }
 }

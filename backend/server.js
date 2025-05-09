@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config();
 
 const express=require('express')
 const mongoose=require('mongoose')
@@ -9,6 +9,8 @@ const chatbotRoutes=require('./routes/chatbot_routes')
 const goalRoutes=require('./routes/goal_routes')
 const reminderRoutes=require('./routes/reminder_routes')
 const savingRoutes=require('./routes/saving_routes')
+const investmentRoutes = require("./routes/investment_routes");
+const videoRoutes = require("./routes/video_routes");
 
 const app=express()
 
@@ -25,6 +27,8 @@ app.use('/api/chatbot',chatbotRoutes)
 app.use('/api/goal',goalRoutes)
 app.use('/api/reminder',reminderRoutes)
 app.use('/api/saving',savingRoutes)
+app.use("/api/analyze-investment", investmentRoutes);
+app.use("/api/videos", videoRoutes);
 
 mongoose.connect(process.env.MONGO_URI)
     .then(()=>{

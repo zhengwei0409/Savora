@@ -28,12 +28,11 @@
                     <a href="#"><img src="../assets/images/savora-logo.png" class="logo"></a>
                     <div class="nav-bar">
                         <nav>
-                            <a href="#" class="">Dashboard</a>
-                            <a href="#" class="">Strategy</a>
+                            <a href="goalForm.html" class="">Dashboard</a>
                             <a href="#" class="">Market Insight</a>
                             <a href="calculator.html" class="">Calculator</a>
-                            <a href="#" class="active">Learning</a>
-                            <a href="#" class="">AI Chatbot</a>
+                            <a href="education.html" class="active">Learning</a>
+                            <a href="chatbot.html" class="">AI Chatbot</a>
                         </nav>
                     </div>
                 </div>
@@ -112,7 +111,7 @@
             // Fetch videos when component mounts
             React.useEffect(() => {
                 // Fetch from your Express API
-                fetch('http://localhost:3000/api/videos')
+                fetch('http://localhost:4000/api/videos')
                     .then(response => {
                         if (!response.ok) {
                             throw new Error('Network response was not ok');
