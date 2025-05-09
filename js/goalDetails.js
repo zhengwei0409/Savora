@@ -118,9 +118,6 @@ document.addEventListener('DOMContentLoaded', function() {
             // Close the modal
             const modal = bootstrap.Modal.getInstance(document.getElementById('deleteGoalModal'));
             modal.hide();
-            
-            // Optional: Show success message or redirect
-            alert('Goal successfully deleted');
         });
     }
 });
