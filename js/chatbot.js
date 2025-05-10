@@ -122,3 +122,31 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.removeItem('chatHistory');
     });
 });
+
+// Get modal elements for clear chat button
+const clearChatBtn = document.getElementById('clear-chat');
+const confirmClearChatBtn = document.getElementById('confirmClearChat');
+const clearChatModal = new bootstrap.Modal(document.getElementById('clearChatModal'));
+
+// Show modal when clear chat button is clicked
+clearChatBtn.addEventListener('click', function() {
+    clearChatModal.show();
+});
+
+// Handle clear chat confirmation
+confirmClearChatBtn.addEventListener('click', function() {
+    // Clear chat messages
+    const chatMessages = document.getElementById('chat-messages');
+    
+    // Remove all messages but keep the intro
+    const botIntro = document.getElementById('bot-intro');
+    chatMessages.innerHTML = '';
+    chatMessages.appendChild(botIntro);
+    botIntro.style.display = 'block'; // Show the intro again
+    
+    // Also clear any chat history from localStorage if you're storing it
+    localStorage.removeItem('chatHistory');
+    
+    // Close the modal
+    clearChatModal.hide();
+});

@@ -3,6 +3,7 @@
     --light-bg: #FAFAFC;
     --gradient-top: #ddddff;
     --gradient-bottom: #191f69;
+    --dark-red: #AF0C15
 }
 
 body {
@@ -58,12 +59,15 @@ body {
 
 .chat-input-container {
     position: relative;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%;
 }
 
 .chat-input {   
     max-width: 1500px;
     width: 100%;
-    margin: 20px auto;
     padding: 20px 50px 20px 20px;
     border-radius: 8px;
     border: none;
@@ -125,12 +129,6 @@ body {
     max-width: 70px;
 }
 
-.chat-footer {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-}
-
 .clear-chat-btn {
     background-color: white;
     color: var(--primary-dark-blue);
@@ -143,11 +141,12 @@ body {
     align-items: center;
     gap: 5px;
     transition: all 0.3s ease;
-    margin-bottom: 20px;
+    margin-right: 10px;
+    height: 50px;
 }
 
 .clear-chat-btn:hover {
-    background-color: var(--primary-dark-blue);
+    background-color: var(--dark-red);
     color: white;
 }
 
@@ -180,6 +179,63 @@ body {
     animation-delay: 0.4s;
 }
 
+/* Modal styling */
+.modal-content {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.modal-header {
+    border-bottom: none;
+    padding: 15px 20px;
+}
+
+.modal-title {
+    color: var(--primary-dark-blue);
+    font-weight: 600;
+    margin: 10px auto;
+}
+
+.modal-body {
+    padding: 20px;
+    font-size: 16px;
+    color: #444;
+    text-align: center;
+}
+
+.modal-footer {
+    border-top: none;
+    padding: 15px 20px;
+    justify-content: center;
+}
+
+.btn-secondary {
+    background-color: #e9ecef;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #dee2e6;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
 @keyframes typing {
     0% { transform: translateY(0); }
     50% { transform: translateY(-5px); }
@@ -204,7 +260,7 @@ body {
 @media (max-width: 768px) {
     .chat-container {
         padding: 10px;
-        margin: 10px;
+        margin: 10px auto;
     }
     
     .message {
