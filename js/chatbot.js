@@ -227,27 +227,11 @@ function addMessage(text, sender) {
 }
 
 function showTypingIndicator() {
-    // const chatMessages = document.getElementById('chat-messages');
-    // if (!chatMessages || document.getElementById('typing-indicator')) return;
-
-    // const typingDiv = document.createElement('div');
-    
-    // typingDiv.classList.add('message', 'bot-message', 'typing-indicator');
-    // typingDiv.id = 'typing-indicator'; // Added ID for easier removal
-    // typingDiv.innerHTML = '<span class="dot"></span><span class="dot"></span><span class="dot"></span>';
-    // typingDiv.id = 'typing-indicator';
-    
-    // chatMessages.appendChild(typingDiv);
-    // scrollToBottom();
     typingIndicator.style.display = 'block';
     scrollToBottom();
 }
 
 function removeTypingIndicator() {
-    // const typingIndicator = document.getElementById('typing-indicator');
-    // if (typingIndicator) {
-    //     typingIndicator.remove();
-    // }
     typingIndicator.style.display = 'none';
     scrollToBottom();
 }
