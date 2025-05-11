@@ -10,6 +10,10 @@
     /* border: 3px solid #303E7B; */
 }
 
+#background-profile{
+    background-color: #E2E7FA;
+}
+
 .pass-form{
     display: flex;
     justify-content: center;
