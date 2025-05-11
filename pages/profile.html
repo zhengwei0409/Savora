@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/profile.css">
+    <link href="/css/navbar.css" rel="stylesheet">
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Savora</title>
+</head>
+
+<body  id="background-profile">
+    <div  class="header">
+        <header>
+            <div class="header-div">
+                <div>
+                    <a href="#"><img src="../assets/images/savora-logo.png" class="logo"></a>
+                    <div class="nav-bar">
+                        <nav>
+                            <a href="#" class="">Dashboard</a>
+                            <a href="#" class="">Market Insight</a>
+                            <a href="calculator.html" class="">Calculator</a>
+                            <a href="education.html" class="active">Learning</a>
+                            <a href="#" class="">AI Chatbot</a>
+                        </nav>
+                    </div>
+                </div>
+                <div>
+                    <button class="sbtn-outline"><span class="bi bi-person-circle"></span>Elon Musk</button>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main class="profile-tab">
+        <div id="profile-align">
+            <img id="user-image" alt="User Image">
+            <div id="profile-text-align">
+                <h2 id="username">Welcome!</h2>
+                <p id="useremail">This is the home page.</p>
+            </div>
+            
+            <div id="button-align">
+                <a href="change_pass.html"><button class="custom-btn">Change Password</button></a>
+                <a href="update_profile.html"><button class="custom-btn">Edit Profile</button></a>
+            </div>
+        </div>
+
+        
+        <div class="table-align">
+            <table>
+                <tr class="border-up">
+                    <th class="th-align">Occupation</th>
+                    <td class="td-align" id="user-Occ">Student</td>
+                </tr>
+    
+               
+                <tr class="border-up">
+                    <th class="th-align">Income</th>
+                    <td class="td-align" id="user-Income">RM1500</td>
+                </tr>   
+    
+                <tr class="border-up">
+                    <th class="th-align">Country</th>
+                    <td class="td-align" id="user-Country">Malaysia</td>
+                </tr>
+
+                <tr class="border-up">
+                    <th class="th-align">Gender</th>
+                    <td class="td-align" id="user-Gender">Male</td>
+                </tr>
+    
+                <tr class="border-up border-down">
+                    <th class="th-align">Date of birth</th>
+                    <td class="td-align" id="user-DOB">9-04-2025</td>
+                </tr>
+            </table>
+        </div>
+        
+
+      
+        
+
+        <div id="button-bottom-align">
+            <button class="bottom-btn" id="logout-btn">Logout</button>
+            <button class="bottom-btn" id="delete-btn" style="background-color: #F62C2C;">Delete Account</button>
+        </div>
+
+        <div id="backgroundOverlay" class="overlay"></div> <!-- Background overlay -->
+
+        <div id="floatingTab1" class="floating-tab">
+            <div class="confirmation-title">
+                <h2>Logout Confirmation</h2>
+                <p>Are you sure you want to logout?</p>
+            </div>
+
+            <div class="floating=btn">
+                <button class="tab-btn confirmButton" id="confirmlogout" >Confirm</button>
+                <button class="tab-btn cancelButton" id="cancelLogout"x>Cancel</button>
+            </div>
+        </div>
+
+        <div id="floatingTab2" class="floating-tab">
+            <div class="confirmation-title">
+                <h2>Delete Confirmation</h2>
+                <p>Are you sure you want to delete?</p>
+            </div>
+
+            <div class="floating=btn">
+                <button class="tab-btn confirmButton" id="confirmdelete" >Confirm</button>
+                <button class="tab-btn cancelButton" id="canceldelete"x>Cancel</button>
+            </div>
+        </div>
+      
+    </main>
+  
+    <div id="footer"></div>
+
+    <script src="/js/header.js"></script>
+    <script src="/js/profile.js"></script>
+</body>
+</html>

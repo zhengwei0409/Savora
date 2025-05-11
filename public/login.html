@@ -15,10 +15,11 @@
     <!-- Custom CSS -->
     <link href="../css/login.css" rel="stylesheet">
     <link href="../css/navbar.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset_pass.css">
+
     
 </head>
 <body>
-
         <div class="header">
             <header>
                 <div class="header-div">
@@ -60,7 +61,7 @@
                     </span>
                 </div>
                 
-                <div class="forgot-password">
+                <div class="forgot-password" id="forgot-password">
                     <a href="#">Forgot Password</a>
                 </div>
                 
@@ -93,11 +94,77 @@
             </p>
         </div>
     </div>
+
+
+    <div class="modal fade verify-tab" id="forgetCompletionModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog no-margin">
+            <div class="modal-content no-border-modal">
+                <div id="forget-tab">
+                    <div class="close-btn"><a href="#">×</a></div>
+                    <div class="confirmation-title">
+                        <h2>Enter your email</h2>
+                        <p>Enter the email address to get verification code to reset your password</p>
+                    </div>
+
+                    <div class="align-reset">
+                        <input type="email">
+                    </div>
+                    <div class="align-reset">
+                        <button class="tab-btn confirmButton" id="confirmlogout" >Confirm</button>
+                        <a href="#">Resend Code</a>
+                    </div>
+
+                    <div class="align-box">
+                        <input type="text" maxlength="1" class="box-display" />
+                        <input type="text" maxlength="1" class="box-display" />
+                        <input type="text" maxlength="1" class="box-display" />
+                        <input type="text" maxlength="1" class="box-display" />
+                    </div>
+
+                    <div class="text-p">
+                        Code went sent to your email
+                        <b>This code will expires in 5 minutes</b>
+                    </div>
+
+                    <button class="tab-btn confirmButton" id="verify-btn">
+                        Verify Code
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade reset-tab" id="resetCompletionModal" tabindex="-1" aria-hidden="true">
+         <div class="modal-dialog no-margin">
+             <div class="modal-content no-border-modal">
+                <div id="reset-tab">
+                    <div class="close-btn"><a href="login.html">×</a></div>
+                    <div class="confirmation-title">
+                        <h2>Enter your email</h2>
+                        <p>Enter the email address to get verification code to reset your password</p>
+                    </div>
+
+                    <div class="align-reset">
+                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Confirmation Password">
+                    </div>
+                    <div class="align-reset">
+                        <button class="tab-btn confirmButton" id="confirmreset">Reset Password</button>
+                    </div>
+                </div>
+             </div>
+         </div>
+    </div>
+       
+           
+    
 </main>
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="../js/login.js"></script>
+     <script src="../js/reset_pass.js"></script>
+    
 </body>
 </html>
