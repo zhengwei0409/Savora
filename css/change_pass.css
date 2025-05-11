@@ -1,0 +1,98 @@
+.pass-tab{
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin: 100px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 20px 30px 30px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); 
+    /* border: 3px solid #303E7B; */
+}
+
+.pass-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2D336B;
+}
+
+.pass-form label{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.newpass{
+    margin-top: 35px;
+}
+.close-btn {
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 10;
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+    color: #2f316b;
+  }
+  
+  .close-btn a {
+    color: #2f316b;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+    display: inline-block;
+  }
+  
+  .close-btn a:hover {
+    color: #e6e8f2;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  .pass-form label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .pass-form input[type="password"]{
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+    background-color: #E2E7FA;
+    margin-bottom: 25px;
+    color: #2D336B;
+  }
+
+  .pass-align{
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .custom-btn {
+    border-radius: 10px;
+    background: #2f316b;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 40%;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  button:hover {
+    background-color: #444996;  
+    transform: scale(1.03);  
+  }
+
+  .button-align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

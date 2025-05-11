@@ -58,3 +58,7 @@
 .sbtn-outline .bi {
     margin-right: 10px;
 }
+
+.nav-bar a:hover{
+    color: white;
+}

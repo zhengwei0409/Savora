@@ -16,23 +16,31 @@ body {
     flex-direction: column;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: calc(100vh - 50px);
+}
+
 .chat-container {
     max-width: 1500px;
     width: 65%;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 20px 20px 80px 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
+    height: calc(100vh - 80px);
+    position: relative;
 }
 
 .chat-messages {
-    flex-grow: 1;
+    height: 100%;
     overflow-y: auto;
-    margin-bottom: 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
 }
 
 .message {
@@ -44,30 +52,31 @@ body {
 }
 
 .bot-message {
-    background-color: var(--primary-dark-blue);
-    color: white;
-    align-self: flex-end;
-    border-radius: 18px 18px 0 18px;
-}
-
-.user-message {
     background-color: white;
     color: #333;
     align-self: flex-start;
     border-radius: 18px 18px 18px 0;
 }
 
+.user-message {
+    background-color: var(--primary-dark-blue);
+    color: white;
+    align-self: flex-end;
+    border-radius: 18px 18px 0 18px;
+}
+
 .chat-input-container {
-    position: relative;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    align-items: center;
-    margin: 20px auto;
-    width: 100%;
+    width: 65%;
+    max-width: 1500px;
 }
 
 .chat-input {   
-    max-width: 1500px;
-    width: 100%;
+    flex-grow: 1; 
     padding: 20px 50px 20px 20px;
     border-radius: 8px;
     border: none;
@@ -78,9 +87,7 @@ body {
     max-height: 300px;
     resize: vertical;
     overflow-y: auto;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+    margin-right: 10px;
 }
 
 .chat-input:focus {
@@ -101,6 +108,7 @@ body {
 .send-icon {
     color: var(--primary-dark-blue);
     font-size: 24px;
+    flex-shrink: 0;
 }
 
 .bot-intro {
@@ -143,6 +151,7 @@ body {
     transition: all 0.3s ease;
     margin-right: 10px;
     height: 50px;
+    flex-shrink: 0;
 }
 
 .clear-chat-btn:hover {
@@ -156,27 +165,45 @@ body {
 
 /* Typing indicator animation */
 .typing-indicator {
-    display: flex;
-    align-items: center;
-    padding: 15px;
+    align-self: flex-start;
+    margin-bottom: 15px;
 }
 
-.typing-indicator .dot {
+.typing {
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+}
+
+.bot-message.typing { /* Styles for the inner div that looks like a message */
+    padding: 12px 18px;
+    display: flex;       /* For aligning the dots */
+    align-items: center;
+    /* It inherits background-color from .bot-message, which is white */
+}
+
+.typing .dot {
     height: 8px;
     width: 8px;
     margin: 0 2px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #777;
     border-radius: 50%;
     display: inline-block;
     animation: typing 1.5s infinite ease-in-out;
 }
 
-.typing-indicator .dot:nth-child(2) {
+.typing .dot:nth-child(2) {
     animation-delay: 0.2s;
 }
 
-.typing-indicator .dot:nth-child(3) {
+.typing .dot:nth-child(3) {
     animation-delay: 0.4s;
+}
+
+@keyframes typing {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
 }
 
 /* Modal styling */
@@ -234,12 +261,6 @@ body {
 
 .btn-danger:hover {
     background-color: #c82333;
-}
-
-@keyframes typing {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
-    100% { transform: translateY(0); }
 }
 
 /* Scrollbar styling */

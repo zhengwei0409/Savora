@@ -1,0 +1,188 @@
+.close-btn {
+    margin-right: 40px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 10;
+    display: flex;
+    justify-content: end;
+    color: #2f316b;
+}
+
+.close-btn a {
+    color: #2f316b;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+    display: inline-block;
+}
+
+.close-btn a:hover {
+    color: #e6e8f2;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(253, 253, 253, 0.5);
+    /* display: none; */
+    z-index: 900; /* Positioned behind the floating tab */
+    filter: blur(5px); /* Apply blur effect */
+}
+
+.verify-tab{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 80%;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    /* z-index: 1000; */
+}
+
+
+
+.confirmation-title h2{
+    font-weight: bold;
+    color: #303E7B;
+    font-size: 22px;
+}
+
+.confirmation-title p{
+    font-size: 15px;
+    color: #303E7B;
+    margin-bottom: 10px;
+}
+
+
+.tab-btn{
+    width: 100px;
+    color: white;                
+    border: none;              
+    padding: 8px 0px;        
+    border-radius: 8px;        
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    margin-bottom: 5px;
+}
+
+.tab-btn:hover{
+    background-color: #444996;  
+    transform: scale(1.03);    
+}
+
+.confirmButton{
+    background-color: #2D336B;
+    font-size: 12px;
+    width: 200px;
+}
+
+.confirmButton:hover{
+    background-color: #444996;  
+    transform: scale(1.03);    
+}
+
+.cancelButton{
+    background-color: #f44336;
+}
+
+.cancelButton:hover{
+    background-color: #f2948d;  
+    transform: scale(1.03);    
+}
+
+.align-reset{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+}
+
+.align-reset a{
+    color: #2D336B;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.align-reset a:hover{
+    color: #303133;
+    transform: scale(1.03);   
+}
+
+.align-reset input[type="email"],
+.align-reset input[type="password"]{
+    width: 40%;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+    background-color: #E2E7FA;
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #2D336B;
+}
+
+
+
+.align-box{
+    margin-top: 40px;
+    justify-content: center;
+    display: flex;
+}
+
+.box-display{
+    background-color: #E2E7FA;
+    border-radius: 6px;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    margin: 0px 10px;
+    color: #2D336B;
+}
+
+.text-p{
+    margin-top: 10px;
+    font-size: 14px;
+    color:#2D336B;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+    margin-bottom: 20px;
+}
+
+.reset-tab{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 50%;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    /* z-index: 1000; */
+}
+
+.no-border-modal {
+    border: none !important;
+}
+
+.no-margin {
+    margin-top: 0%;
+}
