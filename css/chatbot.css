@@ -167,6 +167,7 @@ main {
 .typing-indicator {
     align-self: flex-start;
     margin-bottom: 15px;
+    order: 999;
 }
 
 .typing {
