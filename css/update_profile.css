@@ -1,13 +1,12 @@
 .update-profile-tab{
     align-items: center;
-    background-color: #A9B5DF;
+    background-color: #ffffff;
     border-radius: 30px;
     margin: 100px;
     margin-left: 25%;
     margin-right: 25%;
     padding: 20px 30px 30px 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); 
-    border: 3px solid #303E7B;
 }
   
 .close-btn {
@@ -76,11 +75,11 @@
   }
   
   .border-up {
-    border-top: 1px solid #ffffff;
+    border-top: 1px solid #2D336B;
   }
   
   .th-align {
-    color: white;
+    color: #2D336B;
     text-align: left;
     padding: 10px;
     width: 25%;
@@ -109,6 +108,7 @@
     border: none;
     box-sizing: border-box;
     text-align: right;
+    background-color: #dee3fb;
 
   }
 
@@ -126,7 +126,7 @@
     width: 120px;
     align-items: center;
     gap: 5px;
-    background-color: white;
+    background-color: #dee3fb;
     padding: 8px 14px;
     border-radius: 12px;
     cursor: pointer;

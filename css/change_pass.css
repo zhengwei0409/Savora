@@ -1,6 +1,6 @@
 .pass-tab{
     align-items: center;
-    background-color: #A9B5DF;
+    background-color: #ffffff;
     border-radius: 30px;
     margin: 100px;
     margin-left: 30%;
@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #2D336B;
 }
 
 .pass-form label{
@@ -64,6 +64,7 @@
     box-sizing: border-box;
     background-color: #E2E7FA;
     margin-bottom: 25px;
+    color: #2D336B;
   }
 
   .pass-align{

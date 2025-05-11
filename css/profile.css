@@ -16,14 +16,14 @@ html, body{
 
 .profile-tab{
     align-items: center;
-    background-color: #A9B5DF;
+    background-color: #ffffff;
     border-radius: 30px;
     margin: 100px;
     margin-left: 20%;
     margin-right: 20%;
     padding: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); 
-    border: 3px solid #303E7B;
+
 }
 
 #user-image {
@@ -44,7 +44,7 @@ html, body{
     padding-top: 14px;
     padding-left: 30px;
     width: 100%;
-    color: white;
+    color: #2D336B;
 }
 
 #button-align{
@@ -83,7 +83,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     font-family: 'Inter', sans-serif;
-    color: white;
+    color: #2D336B;
 }
 
 .th-align{
@@ -130,11 +130,11 @@ table {
 }
 
 .border-up{
-    border-top: 1px solid #ffffff;
+    border-top: 1px solid #2D336B;
 }
 
 .border-down{
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #2D336B;
 }
 
 table{
@@ -168,7 +168,7 @@ table{
     transform: translate(-50%, -50%);
     width: 30%;
     height: 30%;
-    background-color: #A9B5DF;
+    background-color: #ffffff;
     display: none; /* Initially hidden */
     align-items: center;
     justify-content: center;
@@ -187,7 +187,7 @@ table{
 
 .confirmation-title p{
     font-size: 20px;
-    color: #ffffff;
+    color: #2D336B;
 }
 
 
