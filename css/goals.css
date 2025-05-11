@@ -26,6 +26,7 @@
   color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* soft drop shadow */
   border-radius: 10px;
+  padding-left: 15px;
 }
 
 .custom-expense-button:hover {
