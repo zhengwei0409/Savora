@@ -1,0 +1,86 @@
+.body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.sub-header {
+    background-color: #2D336B;
+    height: 200px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    color: white;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sub-header a {
+    text-decoration: none;
+    color: white;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+.align-center {
+    text-align: center;
+}
+
+@keyframes underlineAnimation {
+    0% { text-underline-offset: 6px; }
+    50% { text-underline-offset: 12px; }
+    100% { text-underline-offset: 6px; }
+}
+
+.active-title {
+    text-decoration: underline;
+    text-decoration-thickness: 2px; /* Adjust thickness */
+    text-underline-offset: 6px; /* Adds space between text and underline */
+    text-decoration-color: #7886C7; /* Change underline color */
+    animation: underlineAnimation 0.5s ease-in-out;
+}
+
+.section-1 {
+    height: 100%;
+    width: 100%;
+    padding: 80px 150px 80px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.section-card {
+    border: 1px solid #7886C7;
+    border-radius: 20px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    padding: 20px;
+}
+
+.section-card-col1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-card-col1 iframe {
+    border-radius: 20px;
+}
+
+.section-card-col2 {
+    padding: 15px;
+}
+
+.author-text {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.info-text {
+    font-weight: 200;
+    font-size: 12px;
+}

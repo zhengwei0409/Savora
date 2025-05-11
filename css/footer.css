@@ -1,0 +1,77 @@
+/* Footer style */
+
+.footer {
+    background-color: #2D336B;
+    color: white;
+    height: 700px;
+    padding: 80px 150px 80px 150px;
+}
+
+.footer-1 {
+    border-bottom: 1px solid #A9B5DF;
+
+}
+
+.footer-2 {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.footer-2 .title-small {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer-contact-text {
+    margin: 10px 0px 10px 0px;
+    font-size: 30px;
+}
+
+.footer-text {
+    font-weight: 200;
+}
+
+.footer-2 .sbtn-outline {
+    margin: 15px 0px 15px 0px;
+}
+
+.footer-contact-text-email {
+    font-size: 20px;
+}
+
+.footer-2 div {
+    margin: 10px 0px 10px 0px;
+}
+
+.footer-2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-2 a:hover {
+    text-decoration: underline;
+}
+
+.footer-social-aside {
+    margin-top: 30px;
+}
+
+.test {
+    padding-bottom: 100px;
+}
+
+.footer2-col3-social {
+    padding-top: 30px;
+}
+
+.footer2-col3-social .bi {
+    font-size: 32px;
+    margin: 0px 15px 5px 0px;
+}
+
+.footer-3 .footer-text {
+    font-size: 12px;
+    margin: 20px 0px 10px 0px;
+}

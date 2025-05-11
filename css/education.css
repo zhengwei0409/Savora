@@ -1,0 +1,128 @@
+.body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.sub-header {
+    background-color: #2D336B;
+    height: 200px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    color: white;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sub-header a {
+    text-decoration: none;
+    color: white;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+.align-center {
+    text-align: center;
+}
+
+@keyframes underlineAnimation {
+    0% { text-underline-offset: 6px; }
+    50% { text-underline-offset: 12px; }
+    100% { text-underline-offset: 6px; }
+}
+
+.active-title {
+    text-decoration: underline;
+    text-decoration-thickness: 2px; /* Adjust thickness */
+    text-underline-offset: 6px; /* Adds space between text and underline */
+    text-decoration-color: #7886C7; /* Change underline color */
+    animation: underlineAnimation 0.5s ease-in-out;
+}
+
+.section-1 {
+    height: 100%;
+    width: 100%;
+    padding: 80px 150px 80px 150px;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+}
+
+.book-card {
+    border: 1px solid #7886C7;
+    border-radius: 20px;
+    margin: 10px 20px 50px 20px;
+    height: 600px;
+    display: grid;
+    grid-template-rows: 3fr 7fr 2fr;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.book-card img {
+    height: 250px;
+    padding: 20px;
+}
+
+.title-small {
+    font-weight: 600;
+}
+
+.author-text {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.info-text {
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.bi-star-fill {
+    color: #F0CE51;
+}
+
+.description {
+    height: 290px;
+}
+
+.description div {
+    margin: 2px 10px 2px 10px ;
+}
+
+.info-text + .author-text {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.sbtn-primary {
+    border: none;
+    background-color: #2D336B;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 20px;
+}
+
+.sbtn-primary:hover {
+    background-color: #2d336bd4;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(169, 181, 223, 0.4);
+}
+
+.sbtn-primary:active {
+    background-color: #2D336B;
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(169, 181, 223, 0.3);
+}
+

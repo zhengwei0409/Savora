@@ -1,0 +1,236 @@
+:root {
+    --dark-blue: #2D336B;
+    --light-blue: #E2E7FA;
+}
+
+body {
+    background-color: var(--light-blue);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container {
+    display: flex;
+    max-width: 900px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: visible;
+    margin: auto; /* Center the login container */
+    margin-top: 50px; /* Space for navbar */
+    margin-bottom: 50px;
+}
+
+.login-form {
+    background-color: white;
+    padding: 2.5rem 3rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+
+.login-info {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 4rem 3rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* Increase overall size of the panel */
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    min-height: 500px; /* Set minimum height */
+    transform: scale(1.05); /* Make it slightly larger */
+    transform-origin: center;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    margin-right: -15px; /* Extend slightly outside the card */
+}
+
+.login-heading {
+    color: var(--dark-blue);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.form-control {
+    background-color: var(--light-blue);
+    border: none;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+}
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--dark-blue);
+}
+
+.input-icon input {
+    padding-left: 35px;
+    padding-right: 40px; /* Make space for the eye icon */
+}
+
+.password-toggle {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--dark-blue);
+    z-index: 5; /* Ensure it's above the input */
+}
+
+/* Button container to center the login button */
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.login-btn {
+    background-color: var(--dark-blue);
+    color: white;
+    border: none;
+    padding: 0.6rem 2rem; /* Wider button */
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    width: 100%; /* Make button full width of the container */
+}
+
+.login-btn:hover {
+    background-color: #373f85;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #dee2e6;
+}
+
+.divider::before {
+    margin-right: 1rem;
+}
+
+.divider::after {
+    margin-left: 1rem;
+}
+
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 0.6rem;
+    background-color: white;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.google-btn:hover {
+    background-color: #f8f9fa;
+}
+
+.google-btn img {
+    margin-right: 8px;
+}
+
+.forgot-password {
+    text-align: right;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.forgot-password a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.signup-link {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+}
+
+.signup-link a {
+    color: var(--dark-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Logo container */
+.logo-container {
+    margin-bottom: 1.5rem;
+}
+
+.logo-white {
+    width: 80px;
+    height: auto;
+}
+
+.welcome-heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.welcome-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    max-width: 380px;
+    font-weight: 350;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        max-width: 100%;
+        margin: 1rem;
+    }
+    
+    .login-form, .login-info {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    .login-info {
+        order: -1;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 0;
+    }
+    
+    .login-form {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}

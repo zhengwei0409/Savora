@@ -1,0 +1,471 @@
+.display-5 {
+  font-size: 30px; /* Adjusts the size of the brand text */
+  font-weight: 900; /* Makes the display text bold */
+  color: #2D336B; /* Sets the color of the display text */
+  margin: 0;
+}
+
+/* Custom styles for the specific page */
+.custom-container .row {
+  padding: 30px 40px;  /* Padding for 'My Investment Goals' */
+
+}
+
+.custom-container .col-6.d-flex.justify-content-end button {
+  padding-right: 10px; /* Padding for the buttons */
+}
+
+.btn-spacing {
+  margin-right: 20px; /* Adjust to your desired spacing */
+}
+
+.custom-expense-button {
+  background-color: #7886C7;
+  border: 2px solid #A9B5DF;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* soft drop shadow */
+  border-radius: 10px;
+}
+
+.custom-expense-button:hover {
+  background-color: #5a67a7; /* slightly darker on hover */
+  border: 2px solid #A9B5DF;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* soft drop shadow */
+  border-radius: 10px;
+}
+
+.btn-remind {
+  background-color: #F86D6D;
+  color: white;
+  border: 2px solid #FFBEBE;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow */
+  border-radius: 10px;
+}
+
+.btn-remind:hover {
+  background-color: #c95959; /* slightly darker on hover */
+  border: 2px solid #FFBEBE;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* soft drop shadow */
+  border-radius: 10px;
+}
+
+
+
+.risk-level-indicator {
+  display: flex;
+  gap: 2px;
+  /* padding-left: 50px; */
+}
+
+.risk-box {
+  width: 28px;
+  height: 16px;
+  border: 2px solid #888;
+  background-color: #fff;
+  margin-right: 1px; /* Slight overlap to fix double border effect */
+}
+
+.risk-box.filled {
+  background-color: #00cc00;
+  border-color: #007700;
+}
+
+.risk-box.start {
+  border-radius: 10px 0 0 10px;
+}
+
+.risk-box.middle {
+  border-radius: 0;
+}
+
+.risk-box.end {
+  border-radius: 0 10px 10px 0;
+}
+
+.risk-box.filled.green {
+  background-color: #00cc00;
+  border-color: #007700;
+}
+
+.risk-box.filled.orange {
+  background-color: #FF9E1F;
+  border-color: #995f13;
+}
+
+.risk-box.filled.red {
+  background-color: #D32F2F;
+  border-color: #941A1A;
+}
+
+.term-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.term-label {
+  margin: 0;
+  font-size: 1rem;
+  padding-right: 50px;
+  font-weight: bold;
+  /* min-width: 100px; Optional: aligns all rows */
+}
+
+
+.goal-count {
+  background-color: #e0e0e0;
+  color: #333;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+.goal-column {
+    padding: 0px 50px; /* Top/Bottom: 20px, Left/Right: 30px */
+    justify-content: space-between; /* This pushes first to start and last to end */
+    box-sizing: border-box; /* Ensures padding doesn’t affect width */
+  }
+  
+  .first-column {
+    padding-left: 50px;
+    /* padding-right: 30px; */
+  }
+  
+  .last-column {
+    padding-right: 50px;
+    /* padding-left: 30px; */
+  }
+  
+  .custom-goal-card {
+    border: 3px solid #8198E6;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 500px;
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+}
+
+.custom-goal-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+  cursor: pointer;
+}
+
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  
+  .goal-title {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #303E7B;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  
+  h1, p {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .goal-subtext {
+    font-size: 0.85rem;
+    margin-top: 4px;
+    color: #303E7B;
+    font-weight: normal;
+  }
+  
+  .target-amount {
+    text-align: right;
+  }
+  
+  .target-amount .label {
+    font-size: 0.9rem;
+    color: #8198E6;
+    font-weight: 600;
+  }
+  
+  .target-amount h5 {
+    margin: 0;
+    font-weight: bold;
+    color: #2d2d85;
+  }
+  
+  .card-body {
+    margin-top: 0px;
+  }
+  
+  .savings-status {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+  
+  .progress-section label {
+    font-size: 0.9rem;
+    color: #303E7B;
+  }
+  
+  .progress-bar {
+    background-color: #f0f2f7;
+    height: 6px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 4px 0;
+  }
+
+  .progress-info {
+    display: block;
+    text-align: right;
+    color: #303E7B; /* Optional: keep consistent styling */
+    font-size: 0.75rem;
+    margin-top: 4px;
+  }
+  
+  .progress-fill {
+    background-color: #4c60ff;
+    height: 100%;
+    transition: width 0.3s;
+  }
+  
+  .card-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This pushes first to start and last to end */
+    margin-top: 16px;
+  }
+
+  .action-group {
+    display: flex;
+    gap: 30px; /* smaller gap between the first two buttons */
+  }
+  
+  
+  .btn-secondary,
+  .btn-success,
+  .btn-options {
+    border: none;
+    padding: 0px 12px;
+    margin: 0;
+    border-radius: 8px;
+    font-size: 0.7rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .btn-secondary {
+    background-color: #ffffff;
+    border: 2px solid #2d2d85;
+    color: #303E7B;
+    font-weight: bold;
+    transition: all 0.2s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #303E7B; /* Reversed */
+    color: #ffffff;            /* Reversed */
+  }  
+
+  .btn-success {
+    background-color: #ffffff;
+    border: 2px solid #16D900;
+    font-weight: bold;
+    color: #16D900;
+    transition: all 0.2s ease;
+  }
+
+  .btn-success:hover {
+    background-color: #16D900; /* Reversed */
+    color: #ffffff;            /* Reversed */
+  }
+
+  .btn-options {
+    background: none;
+    font-size: 1.2rem;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: start;
+    
+  }
+
+  .btn-options:hover {
+    background: #f4f6fa;
+  }
+  
+  .btn-secondary .bi-book, .bi-cash-coin {
+    font-size: 1.4rem;
+    margin-top: 3px;
+  }
+
+  .custom-modal {
+    background-color: #ECF0FF;
+    border: 3px solid #7886C7;
+    border-radius: 22px;
+    padding: 20px;
+  }
+
+  /* Modal title styling */
+  .custom-modal .modal-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2D336B;
+    padding: 15px 0px;
+  }
+  
+
+  .strategy-modal-body {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding:0px 0px;
+    width: 100%;
+  }
+
+  .custom-strategy-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+    /* Badge color and spacing */
+.strategy-box{
+  padding: 15px 30px 30px;
+}
+
+
+
+.strategy-box .badge {
+  display: inline-flex;
+  gap: 20px;
+  padding: 8px 15px;
+  background-color: #D1FFC9;
+  border-radius: 4px;
+}
+
+.risk-box-sm {
+  width: 15px;
+  height: 11px;
+  border: 1px solid #888;
+  background-color: #fff;
+  /* margin-right: 1px; Slight overlap to fix double border effect */
+}
+
+.risk-row {
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0px;
+}
+
+
+/* Strategy name heading */
+.strategy-box h6 {
+  font-weight: bold;
+  padding: 12px;
+  font-size: 1.2rem;
+}
+
+
+/* Key-value pair layout */
+.strategy-box .strategy-pair {
+  display: flex;
+  justify-content: space-between;
+  font-weight: normal;
+  margin-bottom: 4px;
+  font-size: 13px;
+  padding-top: 5px;
+}
+
+.details-section {
+  padding-top: 3rem;
+  margin-top: 0.5rem;
+  background-color: #00cc00;
+}
+
+.allocation-section {
+  padding-top: 1rem;
+  text-align: left;
+  height: 125px;
+  overflow: auto;
+}
+
+.section-heading, .avoid-label {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.section-content, .avoid-content {
+  padding-top: 3px;
+  font-size: 12px;
+  text-align: start;
+}
+
+.allocation-section .h2 {
+  font-size: 3px; 
+}
+
+.avoid-section {
+  padding-top: 10px;
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+/* Description below */
+.description-text {
+  text-align: left;
+  padding-top: 20px;
+  font-size: 13px;
+}
+
+
+.vertical-divider {
+  width: 3px;
+  background-color: #E2E7FA;
+  height: 85%;
+}
+
+/* Base button style */
+.custom-button {
+  padding: 8px 15px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+/* Change Strategy button */
+.custom-button-outline {
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #C5C5C5;
+}
+
+/* Current Strategy button */
+.custom-button-primary {
+  background-color: #2D336B;
+  color: white;
+  border: 2px solid #A9B5DF;
+}
+
+/* Hover shadow effect for all buttons */
+.custom-button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

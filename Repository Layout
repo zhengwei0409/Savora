@@ -2,7 +2,7 @@ financial-goal-planning-system/
 │
 ├── index.html                   # Main landing page
 ├── about.html                  # About or info page
-├── contact.html                # Optional: Contact/support page
+├── help.html                   # Contact/support page
 │
 ├── assets/                     # Static assets like images, fonts, etc.
 │   ├── images/
@@ -27,26 +27,28 @@ financial-goal-planning-system/
 │   ├── education.html          # Books, videos, articles
 │   └── assistant.html          # AI Chatbot interface
 │
-├── server/                     # Backend (Node.js + MongoDB logic)
+├── backend/                     # Backend (Node.js + MongoDB logic)
 │   ├── app.js                  # Main server file
 │   ├── routes/                 # Route handlers
-│   │   ├── goals.js
-│   │   ├── strategy.js
-│   │   ├── insights.js
-│   │   ├── tools.js
-│   │   ├── education.js
-│   │   └── assistant.js
+│   │   ├── goal_routes.js
+│   │   ├── chatbot_routes.js
+│   │   ├── market_routes.js
+│   │   ├── reminder_routes.js
+│   │   ├── saving_routes.js
+│   │   └── user_routes.js
 │   ├── models/                 # MongoDB models
-│   │   ├── User.js
-│   │   ├── Goal.js
-│   │   └── Strategy.js
-│   └── controllers/            # Business logic
-│       ├── goalsController.js
-│       ├── strategyController.js
-│       ├── insightsController.js
-│       ├── toolsController.js
-│       ├── educationController.js
-│       └── assistantController.js
+│   │   ├── user_models.js
+│   │   ├── chatbot_model.js
+│   │   ├── goal_models.js
+│   │   ├── saving_models.js
+│   │   └── reminder_models.js
+│   └── controller/            # Business logic
+│       ├── goal_controllers.js
+│       ├── market_controller.js
+│       ├── reminder_controllers.js
+│       ├── saving_controllers.js
+│       ├── user_controller.js
+│       └── chatbot_controller.js
 │
 ├── config/                     # Configuration files
 │   └── db.js                   # MongoDB connection

@@ -1,0 +1,288 @@
+/* Base Styles */
+:root {
+    --primary-color: #2D336B;
+    --background-color: #E2E7FA;
+    --input-bg-color: #E2E7FA;
+    --valid-color: #00CA22;
+    --invalid-color: #FF2626;
+    --white-color: #FFFFFF;
+    --text-color: #333333;
+    --border-radius: 12px;
+    --shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+/* Card Styling */
+.registration-card {
+    background-color: var(--white-color);
+    border-radius: var(--border-radius);
+    border: none;
+    box-shadow: var(--shadow);
+    margin: 30px 0;
+    margin-top: 3px;
+    overflow: hidden;
+    max-width: 90%;
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-right: 50px;
+}
+
+/* Form Styling */
+.form-group label {
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    margin-left: 10px;
+    font-size: 0.9rem;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin-left: 10px;
+}
+
+.input-with-icon {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    background-color: var(--input-bg-color);
+    border-radius: 8px;
+    border: none;
+    padding: 10px 36px;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    outline: none;
+    border: 2px solid #A5B4FA; /* Light blue border when focused */
+    background-color: var(--white-color); /* Change background to white when focused */
+}
+
+/* Icon styles */
+.icon-left {
+    position: absolute;
+    left: 12px;
+    color: var(--primary-color);
+    font-size: 14px; /* Slightly smaller */
+    z-index: 10;
+}
+
+.btn-toggle-password {
+    position: absolute;
+    right: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: var(--primary-color);
+}
+
+/* Info icon and tooltip */
+.info-icon-container {
+    position: absolute;
+    right: -32px; /* Position to the right of the password field */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px; /* Slightly smaller */
+    height: 22px; /* Slightly smaller */
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    font-size: 12px; /* Smaller font */
+    cursor: pointer;
+}
+
+.tooltip-content {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    z-index: 100;
+    display: none;
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+/* Validation states */
+.form-control.valid-input {
+    border: 2px solid var(--valid-color);
+}
+
+.form-control.invalid-input {
+    border: 2px solid var(--invalid-color);
+}
+
+.feedback {
+    font-size: 0.75rem;
+    margin-top: 3px;
+    height: 16px;
+    margin-left: 15px;
+}
+
+.feedback.valid-feedback {
+    color: var(--valid-color);
+}
+
+.feedback.invalid-feedback {
+    color: var(--invalid-color);
+}
+
+/* Button Styling */
+.btn-register {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s;
+    width: 90%;
+    font-size: 0.9rem;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-register:hover {
+    background-color: #232a5c;
+    color: white;
+}
+
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 0.6rem;
+    background-color: white;
+    width: 100%;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.google-btn:hover {
+    background-color: #f8f9fa;
+}
+
+.google-btn img {
+    margin-right: 8px;
+}
+
+/* Branding Side */
+.branding-column {
+    position: relative;
+}
+
+.vertical-divider {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    height: 80%;
+    width: 1px;
+    background-color: #e0e0e0;
+}
+
+.branding-content {
+    padding: 20px 30px;
+}
+
+.welcome-text {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.description-text {
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Divider with "or" text */
+.or-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.or-divider::before,
+.or-divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.or-divider span {
+    padding: 0 10px;
+    color: #777;
+    font-size: 0.85rem;
+}
+
+.login-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Center alignment for the form side */
+.col-md-6.pe-md-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px; /* Add more padding/margin */
+}
+
+/* Make form elements match the design */
+#registrationForm {
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .vertical-divider {
+        display: none;
+    }
+    
+    .branding-content {
+        border-top: 1px solid #e0e0e0;
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+}

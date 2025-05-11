@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savora-Calculator</title>
+
+    <!--Link the font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!--Link the stylesheet-->
+    <link href="../css/calculator.css" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <!--Link the boostrap-->
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- React and Babel -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <div class="header-div">
+                <div>
+                    <a href="#"><img src="../assets/images/savora-logo.png" class="logo"></a>
+                    <div class="nav-bar">
+                        <nav>
+                            <a href="goalForm.html" class="">Dashboard</a>
+                            <a href="#" class="">Market Insight</a>
+                            <a href="calculator.html" class="active">Calculator</a>
+                            <a href="education.html" class="">Learning</a>
+                            <a href="chatbot.html" class="">AI Chatbot</a>
+                        </nav>
+                    </div>
+                </div>
+                <div>
+                    <button class="sbtn-outline"><span class="bi bi-person-circle"></span>Elon Musk</button>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="sub-header">
+        <a href="calculator.html">
+            <div class="title active-title">ROI Calculator</div>
+        </a>
+        <a href="calculator2.html">
+            <div class="title">Compound Interest Calculator</div>
+        </a>
+    </div>
+
+
+    <main>
+        <section class="section-1">
+            <div>Want to evaluate your investment performance? <br>Our Investment Calculator helps you understand your
+                returns effortlessly.</div>
+            <div id="myCalculator" class="calculator-section">
+                <!-- Inject React Component Here -->
+            </div>
+
+            <div>
+                <div class="title-small">Description:</div>
+                <br>
+                <ul>
+                    <li>Amount Invested – How much you've put in.</li>
+                    <li>Amount Returned – Your total earnings.</li>
+                    <li>Investment Period – Number of years.</li>
+                    <li>Total Gain on Investment – The profit you've earned.</li>
+                    <li>Return on Investment (ROI %) – The overall percentage gain.</li>
+                    <li>Average Annual Return – How much your investment grows per year.</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="footer">
+            <footer>
+                <div class="footer-1">
+                    <a href="#"><img src="../assets/images/savora-logo.png" class="logo"></a>
+                </div>
+                <div class="footer-2">
+                    <div>
+                        <div class="title-small">Customer Service</div>
+                        <div class="footer-contact-text">+60 488 6969</div>
+                        <div class="footer-text">Mon-Fri, 8:30 - 16:30 MYT</div>
+                        <button class="sbtn-outline">Online Inquiry</button>
+                        <div class="footer-contact-text-email">cs@my.savora.com</div>
+                    </div>
+                    <div>
+                        <div class="title-small">About Savora</div>
+                        <a href="#">
+                            <div class="footer-text">About Savora</div>
+                        </a>
+                        <a href="#">
+                            <div class="footer-text">Newsroom</div>
+                        </a>
+                    </div>
+                    <div>
+                        <div class="title-small">Terms & Conditions</div>
+                        <a href="#">
+                            <div class="footer-text">Terms of Use</div>
+                        </a>
+                        <a href="#">
+                            <div class="footer-text">Privacy Policy</div>
+                        </a>
+                        <a href="#">
+                            <div class="footer-text">Terms and Agreements</div>
+                        </a>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="title-small">Careers / Contact:</div>
+                            <a href="#">
+                                <div class="footer-text">Apply Now</div>
+                            </a>
+                            <div class="footer-text">hr@my.savora.com</div>
+                        </div>
+                        <div class="footer2-col3-social">
+                            <div class="title-small">Follow us on</div>
+                            <a href="#"><span class="bi bi-facebook"></span></a>
+                            <a href="#"><span class="bi bi-instagram"></span></a>
+                            <a href="#"><span class="bi bi-linkedin"></span></a>
+                            <br>
+                            <a href="#"><span class="bi bi-twitter-x"></span></a>
+                            <a href="#"><span class="bi bi-telegram"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-3">
+                    <div class="footer-text">Investment Disclaimer Investing involves risk, and past performance does
+                        not guarantee future results. Always conduct thorough research and consult with financial
+                        professionals before making any investment decisions. Your financial goals and risk tolerance
+                        should guide your choices.</div>
+                    <div class="footer-text">Copyright © 2025 Savora Technologies Inc. All Rights Reserved.</div>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <!-- Your React component and render logic -->
+    <script type="text/babel">
+
+
+
+
+        function ROICalculator() {
+            const [amountInvested, setAmountInvested] = React.useState("");
+            const [amountReturned, setAmountReturned] = React.useState("");
+            const [investmentPeriod, setInvestmentPeriod] = React.useState("1");
+            const [investmentType, setInvestmentType] = React.useState("");
+            const [amountInvestedError, setAmountInvestedError] = React.useState("");
+            const [amountInvestedError2, setAmountInvestedError2] = React.useState("");
+            const [analysisResult, setAnalysisResult] = React.useState("");
+            const [isAnalyzing, setIsAnalyzing] = React.useState(false);
+            const [analysisError, setAnalysisError] = React.useState("");
+
+            let investmentTypeArr = ["Stocks", "Bonds", "Real Estate", "Mutual Funds & ETFs", "Cryptocurrency", "Commodities", "Savings & Fixed Deposits", "Startups & Business Investment"]
+
+            function checkValid(e) {
+
+                let value = e.target.value;
+
+                if (isNaN(value)) {
+                    setAmountInvested(value);
+                    setAmountInvestedError("Please enter a valid number.");
+                } else if (Number(value) < 0) {
+                    setAmountInvested(value);
+                    setAmountInvestedError("Amount cannot be negative.");
+                } else {
+                    setAmountInvested(value);
+                    setAmountInvestedError("");
+                }
+            }
+
+            function checkValid2(e) {
+
+                let value = e.target.value;
+
+                if (isNaN(value)) {
+                    setAmountReturned(value);
+                    setAmountInvestedError2("Please enter a valid number.");
+                } else if (Number(value) < 0) {
+                    setAmountReturned(value);
+                    setAmountInvestedError2("Amount cannot be negative.");
+                } else {
+                    setAmountReturned(value);
+                    setAmountInvestedError2("");
+                }
+            }
+
+            // Calculate investment metrics
+            const totalGain = (amountReturned - amountInvested || 0).toFixed(2);
+            const roi = amountInvested && amountReturned
+                ? ((amountReturned - amountInvested) / amountInvested * 100).toFixed(2)
+                : "0";
+            const annualReturn = amountInvested && amountReturned && investmentPeriod
+                ? ((amountReturned - amountInvested) / amountInvested * 100 / investmentPeriod).toFixed(2)
+                : "0";
+
+            // Function to analyze investment result with Gemini
+            async function analyzeResult() {
+                // Clear previous results
+                setAnalysisResult("");
+                setAnalysisError("");
+
+                // Validate inputs
+                if (!amountInvested || !amountReturned || !investmentType) {
+                    setAnalysisError("Please fill in all required fields");
+                    return;
+                }
+
+                if (amountInvestedError || amountInvestedError2) {
+                    setAnalysisError("Please fix the errors before analyzing");
+                    return;
+                }
+
+                // Show loading state
+                setIsAnalyzing(true);
+
+                try {
+                    // Prepare data to send to backend
+                    const dataToSend = {
+                        amountInvested: Number(amountInvested),
+                        amountReturned: Number(amountReturned),
+                        investmentPeriod: Number(investmentPeriod),
+                        investmentType,
+                        totalGain: Number(totalGain),
+                        roi: Number(roi),
+                        annualReturn: Number(annualReturn)
+                    };
+
+                    // Send data to backend using fetch API
+                    const response = await fetch('http://localhost:4000/api/analyze-investment', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(dataToSend),
+                    });
+
+                    // Check if response is successful
+                    if (!response.ok) {
+                        const errorData = await response.json();
+                        throw new Error(errorData.message || 'Failed to get analysis');
+                    }
+
+                    // Parse the response
+                    const result = await response.json();
+
+                    // Set analysis result
+                    setAnalysisResult(result.analysis);
+                } catch (error) {
+                    console.error('Error analyzing result:', error);
+                    setAnalysisError(error.message || 'An error occurred during analysis');
+                } finally {
+                    // Hide loading state
+                    setIsAnalyzing(false);
+                }
+            }
+
+            return (
+                <React.Fragment>
+                    <div className="calculate-section">
+                        <label htmlFor="amountInvested" className="form-label">
+                            <div className="title-small">Amount Invested</div>
+                        </label>
+                        <div className="input-group">
+                            <span className="input-group-text"><b>MYR</b></span>
+                            <input
+                                type="text"
+                                className="form-control"
+                                id="amountInvested"
+                                value={amountInvested}
+                                onChange={checkValid}
+                            />
+                        </div>
+                        {
+                            <div className="error-message">{amountInvestedError}</div>
+                        }
+                        <label htmlFor="amountReturned" className="form-label">
+                            <div className="title-small">Amount Returned</div>
+                        </label>
+                        <div className="input-group">
+                            <span className="input-group-text"><b>MYR</b></span>
+                            <input
+                                type="text"
+                                className="form-control"
+                                id="amountReturned"
+                                value={amountReturned}
+                                onChange={checkValid2}
+                            />
+                        </div>
+                        {
+                            <div className="error-message">{amountInvestedError2}</div>
+                        }
+                        <label htmlFor="investmentPeriod" className="form-label">
+                            <div className="title-small">Investment Period (in years)</div>
+                        </label>
+                        <div className="period-div">
+                            <input
+                                type="range"
+                                className="form-range"
+                                min="1"
+                                max="100"
+                                step="1"
+                                value={investmentPeriod}
+                                onChange={(e) => setInvestmentPeriod(e.target.value)}
+                            />
+                            <div className="input-group">
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="investmentPeriod"
+                                    value={investmentPeriod}
+                                    onChange={(e) => setInvestmentPeriod(e.target.value)}
+                                />
+                                <span className="input-group-text"><b>Years</b></span>
+                            </div>
+                        </div>
+
+                        <label htmlFor="typeOfInvestment" className="form-label">
+                            <div className="title-small">Type of Investment</div>
+                        </label>
+                        <div>
+                            <select
+                                className="form-select"
+                                id="typeOfInvestment"
+                                value={investmentType}
+                                onChange={(e) => setInvestmentType(e.target.value)}
+                            >
+                                <option value="">Select Type of Investment</option>
+                                {
+                                    investmentTypeArr.map((value, index) => (
+                                        <option key={index} value={value}>{value}</option>
+                                    ))
+                                }
+                            </select>
+                        </div>
+                    </div>
+
+                    <div className="result-section">
+                        <div className="title">Total Gain on Investment</div>
+                        <div className="result-text">MYR {(amountReturned - amountInvested || 0).toFixed(2)}</div>
+
+                        <div className="title">Return on Investment (ROI)</div>
+                        <div className="result-text">
+                            {amountInvested && amountReturned
+                                ? `${(((amountReturned - amountInvested) / amountInvested) * 100).toFixed(2)}%`
+                                : "0%"}
+                        </div>
+
+                        <div className="title">Average Annual Return %</div>
+                        <div className="result-text">
+                            {amountInvested && amountReturned && investmentPeriod
+                                ? `${(((amountReturned - amountInvested) / amountInvested) * 100 / investmentPeriod).toFixed(2)}%`
+                                : "0%"}
+                        </div>
+
+                        <button className="sbtn-primary" onClick={analyzeResult} disabled={isAnalyzing}>
+                            {isAnalyzing ? (
+                                <>
+                                    <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                    <span className="ms-2">Analyzing...</span>
+                                </>
+                            ) : (
+                                <>
+                                    Analyze Result <span className="bi bi-stars"></span>
+                                </>
+                            )} 
+                        </button>
+                    </div>
+                    {analysisResult && (
+                        <div className="analysis-results mt-4 p-3 border rounded">
+                            <h4>Investment Analysis</h4>
+                            <div className="analysis-content">
+                                {analysisResult.split('\n').map((line, index) => (
+                                    <p key={index}>{line}</p>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+                </React.Fragment>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById("myCalculator"));
+        root.render(<ROICalculator />);
+    </script>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/calculator.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
