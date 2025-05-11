@@ -82,3 +82,13 @@ document.getElementById("cancelLogout").addEventListener("click", function() {
 
     document.body.style.overflow = "auto";
 });
+
+document.getElementById('confirmdelete').addEventListener('click', function(event) {
+    event.preventDefault();
+    window.location.replace('/public/index.html');
+});
+
+document.getElementById('confirmlogout').addEventListener('click', function(event) {
+    event.preventDefault();
+    window.location.replace('/public/index.html');
+});
