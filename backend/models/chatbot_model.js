@@ -3,8 +3,12 @@ const Schema=mongoose.Schema
 
 const chatbotSchema=new Schema({
     userId: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref:'User',
+//  TEMPORARY CHANGES FOR TESTING
+//        type: mongoose.Schema.Types.ObjectId,
+//
+//      ref:'User',
+
+        type: String,
         required: true
     },
     question: {

@@ -1,19 +1,26 @@
 const express = require('express');
 const router = express.Router();
-const Chat=require('../models/chatbot_model')
+
+// below code controller handles it already
+// const Chat=require('../models/chatbot_model')
+
 const {
     getChats,
     getChatsByUser,
     createChat,
-    deleteChatByUser
+    deleteChatByUser,
+    handleUserMessage,
 }=require('../controller/chatbot_controller')
 
 router.get('/',getChats)
 
 router.get('/:userId',getChatsByUser)
 
-router.post('/',createChat)
-
 router.delete('/:userId',deleteChatByUser)
+
+router.post('/ask', handleUserMessage);
+
+// direct way to create chat entries without AI (e.g., for testing)
+router.post('/',createChat)
 
 module.exports=router
