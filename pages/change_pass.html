@@ -3,42 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/change_pass.css">
-    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/update_profile.css">
+    <link href="/css/navbar.css" rel="stylesheet">
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Savora</title>
 </head>
 
 <body  id="background-profile">
-    <div id="header"></div>
+    <div  class="header">
+        <header>
+            <div class="header-div">
+                <div>
+                    <a href="#"><img src="../assets/images/savora-logo.png" class="logo"></a>
+                    <div class="nav-bar">
+                        <nav>
+                            <a href="goalForm.html" class="">Dashboard</a>
+                            <a href="insights.html" class="">Market Insight</a>
+                            <a href="calculator.html" class="">Calculator</a>
+                            <a href="education.html" class="">Learning</a>
+                            <a href="chatbot.html" class="">AI Chatbot</a>
+                        </nav>
+                    </div>
+                </div>
+                <div>
+                    <a href="profile.html" class="active"><button class="sbtn-outline "><span class="bi bi-person-circle"></span>Elon Musk</button></a>
+                </div>
+            </div>
+        </header>
+    </div>
 
     <main>
-        <div class="pass-tab">
+        <div class="update-profile-tab">
             <div class="close-btn"><a href="#">×</a></div>
+            <div class="profile-pic">
+                <div class="avatar-wrapper">
+                  <img id="user-profile" alt="User Image" />
+                  <div class="edit-icon">
+                    <img src="/images/Pencil.png" alt="Edit" />
+                  </div>
+                </div>
+              </div>
 
-            <div class="pass-form">
-                <form class="pass-align">
-                    <label>Old Password</label></th>
-                    <input type="password" placeholder="Password"/></td>
-    
-                    <label class="newpass">New Password</label></th>
-                    <input type="password" placeholder="Password"/></td>
-                    <input type="password" placeholder="Confirmation Password"/></td>
             
-                    <div class="button-align">
-                        <button type="submit" class="custom-btn">Save Change</button></th>
-                    </div>
-     
-                </form>
-            </div>      
+            <div class="content-table">
+                <table style="width: 90%;">
+                    <form class="profile-form">
+
+                        <tr class="border-up">
+                            <th class="th-align"><label>Name</label></th>
+                            <td class="td-align" id="user-name"><input type="text" value="Elon Musk" /></td>
+                        </tr>
+
+                        <tr class="border-up">
+                            <th class="th-align"><label>Email</label></th>
+                            <td class="td-align" id="user-email"><input type="email" value="elonmuskveryrich@gmail.com" /></td>
+                        </tr>
+                        
+                        <tr class="border-up">
+                            <th class="th-align"><label>Occupation</label></th>
+                            <td class="td-align" id="user-Occ"><input type="text" value="Student" /></td>
+                        </tr>
+                        
+                        <tr class="border-up">
+                            <th class="th-align"><label>Income (RM)</label></th>
+                            <td class="td-align" id="user-Inc"><input type="number" value="1500" /></td>
+                        </tr>
+
+                        <tr class="border-up">
+                            <th class="th-align"><label>Country</label></th>
+                            <td class="td-align" id="user-Country">
+                                <select>
+                                    <option>Malaysia</option>
+                                    <option>Singapore</option>
+                                    <option>Thailand</option>
+                                </select>
+                            </td>
+                        </tr>
+                
+                        <tr class="border-up">
+                            <th class="th-align"><label>Gender</label></th>
+                            <td class="td-align" id="user-Gender">
+                                <div class="gender-group">
+                                    <label>
+                                        <span>Female</span>
+                                        <input type="radio" name="gender" />
+                                    </label>
+                                  
+                                    <label>
+                                        <span>Male</span>
+                                        <input type="radio" name="gender" checked />
+                                    </label>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <tr class="border-up">
+                            <th class="th-align"> <label>Date of birth</label></th>
+                            <td class="td-align" id="user-DOB"><input type="date" value="" /></td>
+                        </tr>
+
+                        <tr class="border-up">
+                            <th class="th-align" colspan="2">
+                                <div class="button-align">
+                                    <button type="submit" class="custom-btn">Save Change</button></th>
+                                </div>
+                        </tr>
+                        
+                    </form>
+                </table>
+            </div>
+            
         </div>
-       
-        
     </main>
+    
   
     <div id="footer"></div>
 
     <script src="/js/header.js"></script>
-    <script src="/js/change_pass.js"></script>
+    <script src="/js/update-profile.js"></script>
 </body>
 </html>

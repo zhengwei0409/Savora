@@ -25,3 +25,9 @@ function calculateDuration() {
 }
 
 document.getElementById('duration').addEventListener('input', calculateDuration);
+
+
+function goToGoals(event) {
+    event.preventDefault(); 
+    window.location.href = "goals.html"; 
+  }
