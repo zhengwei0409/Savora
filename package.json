@@ -4,7 +4,8 @@
   "description": "Web frontend for Savora",
   "scripts": {
     "start": "cd backend && npm start",
-    "dev": "cd backend && npm run dev"
+    "dev": "cd backend && npm run dev",
+    "install": "cd backend && npm install"
   },
   "dependencies": {
     "bootstrap": "^5.3.5",
