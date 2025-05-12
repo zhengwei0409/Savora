@@ -41,7 +41,7 @@ git clone https://github.com/DYing04/Savora.git
 
 ### 2. Install dependencies
 ```bash
-npm install
+npm run install
 ```
 This will install all dependencies listed in package.json, including Bootstrap, Express, MongoDB driver, and others.
 
