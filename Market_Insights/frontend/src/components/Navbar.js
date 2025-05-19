@@ -12,11 +12,11 @@ const Navbar=()=>{
             </a>
             <div className="nav-bar">
               <nav>
-                <a href="http://127.0.0.1:5500/pages/goalForm.html">Dashboard</a>
+                <a href="http://127.0.0.1:5501/pages/goalForm.html">Dashboard</a>
                 <a href="http://localhost:3000" className="active">Market Insight</a>
-                <a href="http://127.0.0.1:5500/pages/calculator.html" >Calculator</a>
-                <a href="http://127.0.0.1:5500/pages/education.html">Learning</a>
-                <a href="http://127.0.0.1:5500/pages/chatbot.html">AI Chatbot</a>
+                <a href="http://127.0.0.1:5501/pages/calculator.html" >Calculator</a>
+                <a href="http://127.0.0.1:5501/pages/education.html">Learning</a>
+                <a href="http://127.0.0.1:5501/pages/chatbot.html">AI Chatbot</a>
               </nav>
             </div>
           </div>
